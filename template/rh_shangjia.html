@@ -1,0 +1,236 @@
+<div id="rh_shangjia">
+    <div class="location">
+        <p>您当前的位置:{{rh_location}}>
+            <span>{{shop}}</span>
+        </p>
+    </div>
+    <ul class="one">
+        <li class="left">
+            <a href="javascript:void(0)">
+                <img src="./img/rhtuceng111.png" alt="">
+            </a>
+            <div class="lunbo">
+                <div class="pre btn" ng-click="clickPre()">
+                    <</div>
+                        <div class="img">
+                            <ul>
+                                <li>
+                                    <img src="./img/rhtuceng111.png" alt="">
+                                </li>
+                                <li>
+                                    <img src="./img/rhtuceng111.png" alt="">
+                                </li>
+                                <li>
+                                    <img src="./img/rhtuceng111.png" alt="">
+                                </li>
+                                <li>
+                                    <img src="./img/rhtuceng111.png" alt="">
+                                </li>
+                                <li>
+                                    <img src="./img/rhtuceng111.png" alt="">
+                                </li>
+                                <li>
+                                    <img src="./img/rhtuceng111.png" alt="">
+                                </li>
+                                <li>
+                                    <img src="./img/rhtuceng111.png" alt="">
+                                </li>
+                                <li>
+                                    <img src="./img/rhtuceng111.png" alt="">
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="next btn" ng-click="clickNext()">></div>
+                </div>
+        </li>
+        <li class="mid">
+            <div class="top">
+                <h2>{{shop}}</h2>
+                <div class="desc">{{shop}}{{shop}}{{shop}}{{shop}}{{shop}}{{shop}}{{shop}}{{shop}}</div>
+            </div>
+            <div class="mid">
+                <p>
+                    <i class="iconfont icon-ren"></i>
+                    <span>李杰</span>
+                </p>
+                <p>
+                    <i class="iconfont icon-shouji"></i>
+                    <span>88888888888</span>
+                </p>
+                <p>
+                    <i class="iconfont icon-weizhi"></i>
+                    <span>郑州市莲花街55号蓝鸥科技</span>
+                </p>
+            </div>
+            <div class="bottom">
+                <p class="gonggao">商家公告:</p>
+                <div class="desc">{{shop}}</div>
+            </div>
+        </li>
+        <li class="right">
+            <div class="title">所属品牌:
+                <span>{{shop}}</span>
+            </div>
+            <div class="pingjia">
+                <p>综合评价:</p>
+                <div class="bili">
+                    <div></div>
+                </div>
+                <p>4.5分</p>
+            </div>
+            <ul>
+                <li>
+                    <p>描述</p>
+                    <p class="fenzhi">4.5分</p>
+                </li>
+                <li>
+                    <p>商品</p>
+                    <p class="fenzhi">4.5分</p>
+                </li>
+                <li>
+                    <p>服务</p>
+                    <p class="fenzhi">4.5分</p>
+                </li>
+            </ul>
+            <div class="kefu">
+                <span>客服一:</span>
+                <a href="javascript:void(0)">
+                    <i class="iconfont icon-qq"></i>
+                    <span>QQ客服1</span>
+                </a>
+            </div>
+            <div class="kefu">
+                <span>客服二:</span>
+                <a href="javascript:void(0)">
+                    <i class="iconfont icon-qq"></i>
+                    <span>QQ客服2</span>
+                </a>
+            </div>
+        </li>
+        <img src="./img/rhhezuoshangjia.png" alt="">
+    </ul>
+    <div class="two">
+        <ul class="title">
+            <li class="active">
+                <a href="javascript:void(0)" ng-click="clickTitle(0)">男上衣</a>
+            </li>
+            <li>
+                <a href="javascript:void(0)" ng-click="clickTitle(1)">女上衣</a>
+            </li>
+            <li>
+                <a href="javascript:void(0)" ng-click="clickTitle(2)">男裤</a>
+            </li>
+            <li>
+                <a href="javascript:void(0)" ng-click="clickTitle(3)">女裤</a>
+            </li>
+            <li>
+                <a href="javascript:void(0)" ng-click="clickTitle(4)">到店的商品</a>
+            </li>
+            <li>
+                <a href="javascript:void(0)" ng-click="clickTitle(5)">全部商品</a>
+            </li>
+        </ul>
+        <!--男上衣-->
+        <ul class="item active">
+            <li ng-repeat="x in nanshangyi">
+                <a href="#/goodsDetail/{{shop}}/{{x.price}}">
+                    <img ng-src="{{x.src}}" alt="">
+                </a>
+                <div class="bottom">
+                    <p class="desc">{{x.des}}</p>
+                    <p class="price">
+                        <span>¥{{x.price}}</span>
+                        <del>¥20.0</del>
+                    </p>
+                </div>
+            </li>
+        </ul>
+        <!--女上衣-->
+        <ul class="item">
+            <li ng-repeat=" x in nvshangyi">
+                <a href="#/goodsDetail/{{shop}}/{{x.price}}">
+                    <img ng-src="{{x.src}}" alt="">
+                </a>
+                <div class="bottom">
+                    <p class="desc">{{x.des}}</p>
+                    <p class="price">
+                        <span>¥{{x.price}}</span>
+                        <del>¥20.0</del>
+                    </p>
+                </div>
+            </li>
+        </ul>
+        <!--男裤-->
+        <ul class="item">
+            <li ng-repeat="x in nanku">
+                <a href="#/goodsDetail/{{shop}}/{{x.price}}">
+                    <img ng-src="{{x.src}}" alt="">
+                </a>
+                <div class="bottom">
+                    <p class="desc">{{x.des}}</p>
+                    <p class="price">
+                        <span>¥{{x.price}}</span>
+                        <del>¥20.0</del>
+                    </p>
+                </div>
+            </li>
+        </ul>
+        <!--女裤-->
+        <ul class="item">
+            <li ng-repeat="x in nvku">
+                <a href="#/goodsDetail/{{shop}}/{{x.price}}">
+                    <img ng-src="{{x.src}}" alt="">
+                </a>
+                <div class="bottom">
+                    <p class="desc">{{x.des}}</p>
+                    <p class="price">
+                        <span>¥{{x.price}}</span>
+                        <del>¥20.0</del>
+                    </p>
+                </div>
+            </li>
+        </ul>
+
+        <ul class="item">
+            <li>
+                <a href="javascript:viod(0)">
+                    <img src="./img/rhtuceng103.png" alt="">
+                </a>
+                <div class="bottom">
+                    <p class="desc">自家礼包送亲人，送朋友的不二选择。自家礼包...</p>
+                    <p class="price">
+                        <span>¥11.8</span>
+                        <del>¥20.0</del>
+                    </p>
+                </div>
+            </li>
+            <li>
+                <a href="javascript:viod(0)">
+                    <img src="./img/rhtuceng103.png" alt="">
+                </a>
+                <div class="bottom">
+                    <p class="desc">自家礼包送亲人，送朋友的不二选择。自家礼包...</p>
+                    <p class="price">
+                        <span>¥15.8</span>
+                        <del>¥20.0</del>
+                    </p>
+                </div>
+            </li>
+        </ul>
+        <!--全部商品-->
+        <ul class="item">
+            <li ng-repeat="x in allgood">
+                <a href="#/goodsDetail/{{shop}}/{{x.price}}">
+                    <img ng-src="{{x.src}}" alt="">
+                </a>
+                <div class="bottom">
+                    <p class="desc">{{x.des}}</p>
+                    <p class="price">
+                        <span>¥{{x.price}}</span>
+                        <del>¥20.0</del>
+                    </p>
+                </div>
+            </li>
+        </ul>
+    </div>
+    </div>

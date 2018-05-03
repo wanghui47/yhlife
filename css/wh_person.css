@@ -1,0 +1,1448 @@
+* {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/*!*隐藏显示集中区域*!*/
+
+/*!*个人资料绑定手机*!*/
+
+/*#wh_personBindPhone{*/
+
+/*display: none;!*绑定手机(默认隐藏)*!*/
+
+/*}*/
+
+/*!*我的账户*!*/
+
+/*#wh_personMyCount{*/
+
+/*display: none;!*我的账户(默认显示)*!*/
+
+/*}*/
+
+/*!*我的订单*!*/
+
+/*#wh_personMyOrder{*/
+
+/*display: none;!*绑定手机(默认隐藏)*!*/
+
+/*}*/
+
+/*!*我的积分*!*/
+
+/*#wh_personMyScore{*/
+
+/*display: none;!*绑定手机(默认隐藏)*!*/
+
+/*}*/
+
+/*!*我的易和券*!*/
+
+/*#wh_personMyTicket{*/
+
+/*display: none;!*绑定手机(默认隐藏)*!*/
+
+/*}*/
+
+/*!*个人资料*!*/
+
+/*#wh_personMyData{*/
+
+/*display: none;!*绑定手机(默认隐藏)*!*/
+
+/*}*/
+
+/*!*地址管理*!*/
+
+/*#wh_personMyAddress{*/
+
+/*display: none;!*绑定手机(默认隐藏)*!*/
+
+/*}*/
+
+/*!*我的收藏*!*/
+
+/*#wh_personMyFav{*/
+
+/*display: none;!*绑定手机(默认隐藏)*!*/
+
+/*}*/
+
+/*!*最近浏览*!*/
+
+/*#wh_personMyLook{*/
+
+/*display: none;!*绑定手机(默认隐藏)*!*/
+
+/*}*/
+
+/*!*修改密码*!*/
+
+/*#wh_personMyPassword{*/
+
+/*display: none;!*绑定手机(默认隐藏)*!*/
+
+/*}*/
+
+/*!*我的消息*!*/
+
+/*#wh_personMyMessage{*/
+
+/*display: none;!*绑定手机(默认隐藏)*!*/
+
+/*}*/
+
+/*外层包裹div*/
+
+#wh_personWrap {
+  width: 1180px;
+  /*height: 550px;*/
+  margin: 20px auto;
+}
+
+/*左侧div*/
+
+#wh_personLeft {
+  width: 175px;
+  height: 550px;
+  display: inline-block;
+  vertical-align: top;
+  background-color: white;
+  text-align: center;
+  border: 1px solid rgb(211, 211, 211);
+}
+
+#wh_personLeft > span {
+  display: inline-block;
+  width: 100%;
+  height: 57px;
+  line-height: 57px;
+  font-size: 20px;
+  border-bottom: 1px solid rgb(211, 211, 211);
+}
+
+#wh_personLeft > span > i {
+  font-size: 20px;
+}
+
+/*所有的li样式*/
+
+#wh_personLeft > ul li {
+  width: 100%;
+  height: 35px;
+  line-height: 35px;
+  font-size: 18px;
+}
+
+/*第1, 6, 12个li的样式*/
+
+#wh_personLeft > ul .wh_personLeftLi {
+  font-size: 20px;
+  color: rgb(0, 141, 225);
+}
+
+#wh_personWrap > div:nth-of-type(n + 3) {
+  vertical-align: top;
+  margin-left: 10px;
+}
+
+/*person所有div的公共样式*/
+
+.personDivAll {
+  width: 985px;
+  height: 550px;
+  background-color: white;
+  /*display: none;!*绑定手机(默认隐藏)*!*/
+  border: 1px solid rgb(211, 211, 211);
+}
+
+/*隐藏样式*/
+
+.disNone {
+  display: none;
+}
+
+/*显示样式*/
+
+.disBlock {
+  display: inline-block;
+}
+
+/*右侧div*/
+
+/*****************************  第一个页面(绑定手机)  *************************************/
+
+#wh_personBindPhone input {
+  text-align: center;
+}
+
+/*所有input里面的placeholder样式*/
+
+#wh_personBindPhone input::-webkit-input-placeholder {
+  color: rgb(153, 153, 153);
+  font-size: 18px;
+  line-height: inherit;
+}
+
+/*手机验证码输入框的placeholder*/
+
+#wh_personBindPhone input:nth-of-type(5)::-webkit-input-placeholder {
+  margin-left: -15px;
+  margin-top: -15px;
+  line-height: normal;
+}
+
+/*右侧上部div(绑定手机)*/
+
+#wh_perRightTop {
+  width: 984px;
+  height: 57px;
+  border-bottom: 1px solid rgb(211, 211, 211);
+  line-height: 57px;
+}
+
+/*绑定手机字体*/
+
+#wh_perRightTop > p {
+  margin-left: 20px;
+  font-size: 20px;
+  color: rgb(0, 141, 225);
+}
+
+#wh_perRightBottom {
+  position: relative;
+}
+
+/*输入密码里面的错误和正确提示*/
+
+#wh_perRightBottom > i {
+  font-size: 25px;
+  position: absolute;
+  display: none;
+}
+
+#wh_perRightBottom > i:nth-of-type(1) {
+  color: red;
+  top: 80px;
+  left: 350px;
+}
+
+#wh_perRightBottom > i:nth-of-type(2) {
+  color: #57b879;
+  top: 80px;
+  left: 350px;
+}
+
+/*确认密码里面的错误和正确提示*/
+
+#wh_perRightBottom > i:nth-of-type(3) {
+  color: red;
+  top: 148px;
+  left: 350px;
+}
+
+#wh_perRightBottom > i:nth-of-type(4) {
+  color: #57b879;
+  top: 148px;
+  left: 350px;
+}
+
+/*右下上方的三个input*/
+
+#wh_perRightBottom > input {
+  display: block;
+  width: 360px;
+  height: 50px;
+  background-color: rgb(249, 249, 249);
+  border: 1px solid rgb(211, 211, 211);
+  margin-top: 15px;
+  margin-left: 30px;
+  font-size: 18px;
+}
+
+/*验证码*/
+
+/*图形验证码和手机验证码div公共样式*/
+
+#wh_perRightBottom > div {
+  width: 360px;
+  height: 50px;
+  margin-top: 15px;
+  margin-left: 30px;
+}
+
+/*图形验证码*/
+
+/*图形验证码input*/
+
+#wh_perRightBottom > div:nth-of-type(1) input {
+  width: 110px;
+  height: 50px;
+  background-color: rgb(249, 249, 249);
+  border: 1px solid rgb(211, 211, 211);
+  vertical-align: middle;
+  font-size: 30px;
+}
+
+/*图形验证码span(看不清?)*/
+
+#wh_perRightBottom > div:nth-of-type(1) span {
+  font-size: 10px;
+}
+
+/*图形验证码图片区域*/
+
+#wh_vContainer {
+  display: inline-block;
+  width: 100px;
+  height: 50px;
+  vertical-align: middle;
+}
+
+#wh_vContainer canvas {
+  margin-top: 10px;
+}
+
+/*手机验证码div*/
+
+#wh_perRightBottom > div:nth-of-type(2) {
+  border: 1px solid rgb(211, 211, 211);
+}
+
+#wh_perRightBottom > div:nth-of-type(2) input {
+  border: 0;
+  outline: 0;
+  width: 180px;
+  height: 50px;
+  font-size: 30px;
+  text-align: center;
+  line-height: 50px;
+  vertical-align: top;
+}
+
+/*获取手机验证码按钮*/
+
+#wh_perRightBottom > div:nth-of-type(2) button {
+  width: 160px;
+  height: 40px;
+  margin-left: 5px;
+  font-size: 20px;
+  color: white;
+  outline: 0;
+  border: 0;
+  margin-top: 5px;
+  line-height: 40px;
+  background-color: rgb(0, 141, 225);
+}
+
+#wh_perRightBottom > div:nth-of-type(2) > button:nth-of-type(2) {
+  display: none;
+  color: lightgrey;
+}
+
+#wh_perRightBottom > div:nth-of-type(2) > button:nth-of-type(2) > span {
+  color: cyan;
+  font-size: 30px;
+}
+
+/*点击绑定按钮*/
+
+#wh_perRightBottom div:nth-of-type(3) button {
+  width: 170px;
+  height: 50px;
+  background-color: rgb(236, 106, 23);
+  border: 0;
+  border-radius: 5px;
+  outline: none;
+  font-size: 20px;
+  color: white;
+  margin-left: 95px;
+}
+
+/*****************************  第二个页面(我的账户)  *************************************/
+
+#wh_personLeft > ul > li:nth-of-type(2) {
+  background-color: cyan;
+}
+
+#wh_personMyCount {
+  position: relative;
+  background-color: rgb(242, 242, 242);
+  border: 0;
+}
+
+/*账户上部div*/
+
+#wh_countTop {
+  width: 100%;
+  height: 140px;
+  background-color: rgb(255, 244, 236);
+  border: 1px solid rgb(211, 211, 211);
+}
+
+#wh_countTop > img {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 100px;
+  height: 100px;
+}
+
+#wh_countTop span {
+  position: absolute;
+}
+
+/*您好文字*/
+
+#wh_countTop span:nth-of-type(1) {
+  top: 60px;
+  left: 140px;
+}
+
+/*号码文字*/
+
+#wh_countTop span:nth-of-type(2) {
+  color: rgb(237, 115, 37);
+  top: 60px;
+  left: 183px;
+}
+
+/*当前积分文字*/
+
+#wh_countTop span:nth-of-type(3) {
+  top: 35px;
+  left: 480px;
+}
+
+/*余额文字*/
+
+#wh_countTop span:nth-of-type(4) {
+  top: 35px;
+  left: 680px;
+}
+
+/*易和券文字*/
+
+#wh_countTop span:nth-of-type(5) {
+  top: 35px;
+  left: 880px;
+}
+
+/*下方橙色的文字*/
+
+#wh_countTop span:nth-of-type(6) {
+  color: rgb(237, 115, 37);
+  top: 75px;
+  left: 485px;
+}
+
+#wh_countTop span:nth-of-type(7) {
+  color: rgb(237, 115, 37);
+  top: 75px;
+  left: 665px;
+}
+
+#wh_countTop span:nth-of-type(8) {
+  color: rgb(237, 115, 37);
+  top: 75px;
+  left: 900px;
+}
+
+/*账户中部div*/
+
+#wh_countMiddle {
+  width: 100%;
+  height: 150px;
+  background-color: white;
+  border: 1px solid rgb(211, 211, 211);
+  border-top: 0;
+  position: relative;
+}
+
+/*我的等级文字*/
+
+#wh_countMiddle > p:nth-of-type(1) > span:nth-of-type(1) {
+  display: inline-block;
+  margin: 20px 0 0 20px;
+}
+
+/*VIP2文字*/
+
+#wh_countMiddle > p:nth-of-type(1) > span:nth-of-type(2) {
+  display: inline-block;
+  font-size: 30px;
+  color: rgb(255, 108, 0);
+  font-style: italic;
+}
+
+/*等级指示的p*/
+
+#wh_countMiddle > p:nth-of-type(2) {
+  margin: 10px 0 0 40px;
+}
+
+/*所有的i标签*/
+
+#wh_countMiddle .iconfont {
+  font-size: 30px;
+  vertical-align: middle;
+}
+
+/*原有的灰色span*/
+
+#wh_personMyCount #wh_countMiddle > p:nth-of-type(2) span:nth-of-type(2n + 1) {
+  display: inline-block;
+  width: 105px;
+  height: 6px;
+  background-color: rgb(211, 211, 211);
+  vertical-align: middle;
+}
+
+/*盖住的橙色span*/
+
+#wh_personMyCount #wh_countMiddle > p:nth-of-type(2) span:nth-of-type(2n + 2) {
+  display: inline-block;
+  width: 0px;
+  height: 6px;
+  background-color: rgb(255, 108, 0);
+  vertical-align: middle;
+  position: absolute;
+  top: 68.5px;
+}
+
+#wh_personMyCount #wh_countMiddle > p:nth-of-type(2) span:nth-of-type(2) {
+  left: 72px;
+}
+
+#wh_personMyCount #wh_countMiddle > p:nth-of-type(2) span:nth-of-type(4) {
+  left: 217px;
+}
+
+#wh_personMyCount #wh_countMiddle > p:nth-of-type(2) span:nth-of-type(6) {
+  left: 363px;
+}
+
+#wh_personMyCount #wh_countMiddle > p:nth-of-type(2) span:nth-of-type(8) {
+  left: 507px;
+}
+
+#wh_personMyCount #wh_countMiddle > p:nth-of-type(2) span:nth-of-type(10) {
+  left: 650px;
+}
+
+#wh_personMyCount #wh_countMiddle > p:nth-of-type(2) span:nth-of-type(12) {
+  left: 797px;
+}
+
+/*账户等级积分指示*/
+
+#wh_countMiddle #wh_countClass {
+  width: 985px;
+  height: 20px;
+  margin: 12px 0 0 0;
+  color: rgb(143, 143, 143);
+}
+
+#wh_countMiddle #wh_countClass span {
+  margin-left: 78px;
+}
+
+#wh_countMiddle #wh_countClass span:nth-of-type(1) {
+  margin-left: 20px;
+}
+
+#wh_countMiddle #wh_countClass span:nth-of-type(6) {
+  margin-left: 70px;
+}
+
+#wh_countMiddle #wh_countClass span:nth-of-type(7) {
+  margin-left: 72px;
+}
+
+/*账户下部div*/
+
+#wh_countBottom {
+  width: 100%;
+  height: 240px;
+  margin-top: 17px;
+  border: 1px solid rgb(211, 211, 211);
+}
+
+#wh_countBottom img {
+  width: 100%;
+  height: 100%;
+}
+
+/***************第三个页面(我的订单)***************/
+
+#wh_personMyOrder {
+  height: 1860px;
+}
+
+#wh_personMyOrder .wh-mrorder {
+  padding-left: 20px;
+  padding-top: 15px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #d3d3d3;
+}
+
+#wh_personMyOrder .wh-mrorder span:nth-child(2) {
+  margin-left: 50px;
+}
+
+#wh_personMyOrder .wh-mrorder span:nth-child(3) {
+  color: #ec6a17;
+}
+
+#wh_personMyOrder .wh-mrorder button:nth-child(4) {
+  background-color: #adadad;
+  width: 90px;
+  height: 30px;
+  border: none;
+  color: white;
+  float: right;
+  margin-right: 20px;
+  border-radius: 10px;
+}
+
+#wh_personMyOrder .wh-mrorder button:nth-child(5) {
+  background-color: #ec6a17;
+  width: 90px;
+  height: 30px;
+  border: none;
+  color: white;
+  margin-right: 20px;
+  float: right;
+  border-radius: 10px;
+}
+
+#wh_personMyOrder .wh-zhifu {
+  width: 945px;
+  height: 420px;
+  background-color: #f6f6f6;
+  margin: 15px auto;
+}
+
+#wh_personMyOrder .wh-zhifu ul li {
+  padding-top: 15px;
+  padding-left: 20px;
+}
+
+#wh_personMyOrder .wh-zhifu .span1 {
+  float: left;
+  margin-top: -23px;
+  margin-left: 180px;
+  color: gray;
+  font-weight: 200;
+}
+
+#wh_personMyOrder .wh-zhifu .span2 {
+  float: left;
+  margin-top: -23px;
+  color: gray;
+  margin-left: 290px;
+  font-weight: 200;
+}
+
+#wh_personMyOrder .wh-massage {
+  margin-left: 20px;
+  color: #ec6a17;
+}
+
+#wh_personMyOrder .wh-massage1 {
+  width: 945px;
+  height: 130px;
+  background-color: #f6f6f6;
+  margin: 15px auto;
+}
+
+#wh_personMyOrder .wh-massage1 ul li {
+  padding-top: 15px;
+  padding-left: 20px;
+}
+
+#wh_personMyOrder .wh-massage1 .span3 {
+  float: left;
+  margin-top: -23px;
+  color: gray;
+  margin-left: 180px;
+  font-weight: 200;
+}
+
+#wh_personMyOrder .wh-massage2 {
+  width: 945px;
+  height: 95px;
+  background-color: #f6f6f6;
+  margin: 15px auto;
+}
+
+#wh_personMyOrder .wh-massage2 .span4 {
+  float: left;
+  margin-top: -23px;
+  color: gray;
+  margin-left: 180px;
+  font-weight: 200;
+}
+
+#wh_personMyOrder .wh-massage2 ul li {
+  padding-top: 15px;
+  padding-left: 20px;
+}
+
+#wh_personMyOrder .wh-shangpin {
+  height: 368px;
+  width: 945px;
+  margin: 0 auto;
+  border: 1px solid #d3d3d3;
+}
+
+#wh_personMyOrder .wh-shangping0 {
+  height: 370px;
+  width: 945px;
+  border: 1px solid #d3d3d3;
+  margin: 0 auto;
+}
+
+#wh_personMyOrder .wh-shangpin {
+  width: 945px;
+  height: 35px;
+  background-color: #f6f6f6;
+  border: none;
+}
+
+#wh_personMyOrder .wh-shangpin .span5 {
+  font-size: 14px;
+  margin-left: 20px;
+  line-height: 35px;
+}
+
+#wh_personMyOrder .wh-shangpin .span6 {
+  font-size: 14px;
+  float: right;
+  line-height: 35px;
+  padding-right: 100px;
+}
+
+#wh_personMyOrder .wh-nv {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #f6f6f6;
+}
+
+#wh_personMyOrder .wh-nv img {
+  margin-top: 10px;
+  margin-left: 20px;
+  vertical-align: middle;
+}
+
+#wh_personMyOrder .wh-nv .span7 {
+  font-size: 14px;
+  color: gray;
+}
+
+#wh_personMyOrder .wh-nv .span8 {
+  font-size: 14px;
+  float: right;
+  margin-right: 460px;
+  margin-top: 15px;
+  color: gray;
+}
+
+#wh_personMyOrder .wh-nv .span9 {
+  font-size: 14px;
+  float: right;
+  margin-right: 474px;
+  margin-top: -32px;
+  color: gray;
+}
+
+#wh_personMyOrder .wh-nv .span10 {
+  font-size: 14px;
+  float: right;
+  margin-right: 354px;
+  margin-top: -45px;
+  color: gray;
+}
+
+#wh_personMyOrder .wh-nv .span11 {
+  font-size: 14px;
+  float: right;
+  margin-right: 240px;
+  margin-top: -45px;
+  color: gray;
+}
+
+#wh_personMyOrder .wh-nv .span12 {
+  font-size: 14px;
+  float: right;
+  margin-right: 95px;
+  margin-top: -45px;
+  color: gray;
+}
+
+#wh_personMyOrder .wh-all span:nth-child(1) {
+  margin-right: 30px;
+  font-size: 14px;
+}
+
+#wh_personMyOrder .wh-all0 {
+  margin-top: 15px;
+  float: right;
+}
+
+#wh_personMyOrder .wh-all span {
+  float: right;
+  margin-right: 100px;
+  font-size: 14px;
+}
+
+#wh_personMyOrder .wh-all1 span:nth-child(1) {
+  margin-right: 30px;
+  font-size: 14px;
+}
+
+#wh_personMyOrder .wh-all1 span {
+  margin-top: 10px;
+  float: right;
+  margin-right: 100px;
+  font-size: 14px;
+  color: #ec6a17;
+}
+
+#wh_personMyOrder .wh-jifen {
+  float: right;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  margin-right: 20px;
+}
+
+#wh_personMyOrder .wh-jifen span:nth-child(1) {
+  margin-right: 50px;
+}
+
+#wh_personMyOrder .wh-jifen span:nth-child(2) {
+  color: #ec6a17;
+}
+
+#wh_personMyOrder .wh-xian {
+  width: 940px;
+  height: 1px;
+  background-color: #f6f6f6;
+  margin-left: 20px;
+  margin-top: 100px;
+}
+
+#wh_personMyOrder .wh-shifu {
+  float: right;
+  margin-right: -335px;
+  margin-top: 35px;
+}
+
+#wh_personMyOrder .wh-shifu .wh-shifu-qian {
+  font-size: 20px;
+  margin-right: 80px;
+}
+
+#wh_personMyOrder .wh-shifu .wh-shifu-qian > span:nth-child(1) {
+  margin-left: 600px;
+}
+
+#wh_personMyOrder .wh-shifu .wh-shifu-qian span:nth-child(2) {
+  color: #ec6a17;
+}
+
+#wh_personMyOrder .wh-shifu .wh-shifu-dindan button:nth-child(1) {
+  background-color: #adadad;
+  width: 90px;
+  height: 30px;
+  border: none;
+  color: white;
+  float: right;
+  margin-right: 80px;
+  border-radius: 10px;
+  margin-top: 50px;
+}
+
+#wh_personMyOrder .wh-shifu .wh-shifu-dindan button:nth-child(2) {
+  background-color: #ec6a17;
+  width: 90px;
+  height: 30px;
+  border: none;
+  color: white;
+  float: right;
+  margin-right: 30px;
+  border-radius: 10px;
+  margin-top: 50px;
+}
+
+/*****************************  第四个页面(我的积分)  *************************************/
+
+#wh_personMyScore {
+  height: 100%;
+  min-height: 550px;
+}
+
+/*我的积分文字*/
+
+#wh_personMyScore > p:nth-of-type(1) {
+  width: 965px;
+  height: 57px;
+  line-height: 57px;
+  color: rgb(0, 141, 225);
+  font-size: 15px;
+  padding-left: 20px;
+  border-bottom: 1px solid rgb(211, 211, 211);
+}
+
+/*积分信息*/
+
+#wh_personMyScore > p:nth-of-type(2) {
+  width: 984px;
+  height: 57px;
+  line-height: 57px;
+  font-size: 15px;
+  color: black;
+  padding-left: 20px;
+}
+
+/*橙色积分数字*/
+
+#wh_personMyScore > p:nth-of-type(2) span:nth-of-type(2n) {
+  font-size: 25px;
+  color: rgb(236, 106, 23);
+  margin-right: 50px;
+}
+
+/*兑换记录文字*/
+
+#wh_personMyScore > p:nth-of-type(2) a {
+  margin-left: 374px;
+  color: rgb(0, 141, 225);
+}
+
+#wh_personMyScore > div:nth-of-type(1) {
+  width: 940px;
+  border: 1px solid rgb(242, 242, 242);
+  border-bottom: 0;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+/*兑换记录div(默认隐藏)*/
+
+#wh_personMyScore > div:nth-of-type(2) {
+  width: 940px;
+  height: 100%;
+  display: none;
+  margin: 50px auto;
+}
+
+#wh_personMyScore > div:nth-of-type(2) > p {
+  background-color: white;
+}
+
+/*积分日期/积分/来源文字*/
+
+#wh_personMyScore > div > p {
+  width: 940px;
+  height: 35px;
+  line-height: 35px;
+  display: flex;
+  justify-content: space-around;
+  background-color: rgb(242, 242, 242);
+}
+
+/*积分日期文字*/
+
+#wh_personMyScore > div > p span:nth-of-type(1) {
+  margin-left: 30px;
+}
+
+/*积分文字*/
+
+#wh_personMyScore > div > p span:nth-of-type(2) {
+  margin-left: 20px;
+}
+
+/*来源文字*/
+
+#wh_personMyScore > div > p span:nth-of-type(3) {
+  margin-left: -20px;
+}
+
+/*积分明细的li*/
+
+#wh_personMyScore > div > ul li {
+  display: flex;
+  justify-content: space-around;
+  border-bottom: 1px solid rgb(242, 242, 242);
+  height: 40px;
+  line-height: 40px;
+}
+
+/*****************************  第五个页面(我的易和券)  *************************************/
+
+#wh_personMyTicket {
+  width: 940px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#wh_personMyTicket > span {
+  display: inline-block;
+  height: 50px;
+  margin-top: 50px;
+}
+
+/*****************************  第六个页面(个人资料)  *************************************/
+
+/*个人资料文字*/
+
+#wh_personMyData > p:nth-of-type(1) {
+  width: 965px;
+  height: 57px;
+  line-height: 57px;
+  color: rgb(0, 141, 225);
+  font-size: 15px;
+  padding-left: 20px;
+  border-bottom: 1px solid rgb(211, 211, 211);
+}
+
+/*所有的li样式*/
+
+#wh_personMyData > form > ul li {
+  width: 890px;
+  height: 65px;
+  line-height: 65px;
+  margin-left: 30px;
+}
+
+/*所有的li里面的span样式(除了第一个li)*/
+
+#wh_personMyData > form > ul li:nth-of-type(n + 2) span {
+  margin-left: 30px;
+}
+
+/*所有li里面的div的样式*/
+
+#wh_personMyData > form > ul div {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/*第一个li里面的div样式*/
+
+#wh_personMyData > form > ul > li:nth-of-type(1) > div {
+  height: 65px;
+  line-height: 65px;
+}
+
+/*当前头像文字*/
+
+#wh_personMyData > form > ul > li:nth-of-type(1) span:nth-of-type(1) {
+  vertical-align: middle;
+}
+
+/*当前头像的img*/
+
+#wh_personMyData > form > ul > li:nth-of-type(1) > div img {
+  width: 49px;
+  height: 49px;
+  vertical-align: middle;
+}
+
+/*修改图片按钮的样式(上传input)开始*/
+
+#wh_personMyData > form > ul > li:nth-of-type(1) > div .file {
+  position: relative;
+  display: inline-block;
+  background: #d0eeff;
+  border: 1px solid #99d3f5;
+  border-radius: 4px;
+  padding: 4px 12px;
+  overflow: hidden;
+  color: #1e88c7;
+  text-decoration: none;
+  text-indent: 0;
+  line-height: 20px;
+  vertical-align: middle;
+}
+
+#wh_personMyData > form > ul > li:nth-of-type(1) > div .file input {
+  position: absolute;
+  font-size: 100px;
+  right: 0;
+  top: 0;
+  opacity: 0;
+}
+
+#wh_personMyData > form > ul > li:nth-of-type(1) > div .file:hover {
+  background: #aadffd;
+  border-color: #78c3f3;
+  color: #004974;
+  text-decoration: none;
+}
+
+/*修改图片按钮的样式(上传input)结束*/
+
+/*当前头像里面的修改(a标签)*/
+
+#wh_personMyData > form > ul > li:nth-of-type(1) > div input:nth-of-type(2) {
+  vertical-align: middle;
+  color: rgb(0, 141, 225);
+}
+
+/*第二个和第五个li里面的input框*/
+
+#wh_personMyData > form > ul > li:nth-of-type(2) input,
+#wh_personMyData > form > ul > li:nth-of-type(5) input {
+  width: 175px;
+  height: 35px;
+  background-color: rgb(244, 244, 244);
+  border: 1px solid rgb(211, 211, 211);
+  outline: 0;
+  font-size: 15px;
+}
+
+/*第二个和第五个li里面的input框里面的placeholder样式*/
+
+#wh_personMyData
+  > form
+  > ul
+  > li:nth-of-type(2)
+  input::-webkit-input-placeholder,
+#wh_personMyData
+  > form
+  > ul
+  > li:nth-of-type(5)
+  input::-webkit-input-placeholder {
+  font-size: 15px;
+}
+
+/*生日里面的select框*/
+
+#wh_personMyData > form > ul > li:nth-of-type(4) select {
+  width: 88px;
+  height: 35px;
+  background-color: white;
+  margin-left: 10px;
+  font-size: 15px;
+}
+
+/*更换手机文字(a标签)*/
+
+#wh_personMyData > form > ul > li:nth-of-type(5) a {
+  color: rgb(0, 141, 225);
+}
+
+/*确认提交按钮*/
+
+#wh_personMyData > form > ul > li:nth-of-type(6) input {
+  width: 170px;
+  height: 45px;
+  background-color: rgb(236, 106, 23);
+  border: 0;
+  outline: 0;
+  border-radius: 7px;
+  margin-left: 84px;
+}
+
+/*****************************  第七个页面(地址管理(空地址))  *************************************/
+
+#wh_personMyAddress > div {
+  height: 58px;
+  border-bottom: 1px solid rgb(211, 211, 211);
+}
+
+/*收货地址文字*/
+
+#wh_personMyAddress > div > span {
+  display: inline-block;
+  width: 80px;
+  height: 57px;
+  line-height: 57px;
+  color: rgb(0, 141, 225);
+  font-size: 15px;
+  padding-left: 20px;
+}
+
+/*添加新地址button*/
+
+#wh_personMyAddress > div > button {
+  width: 90px;
+  height: 30px;
+  margin-left: 775px;
+  background-color: rgb(236, 106, 23);
+  border: 0;
+  outline: 0;
+  border-radius: 7px;
+  color: white;
+}
+
+/*请点击提示*/
+
+#wh_personMyAddress > p {
+  text-align: center;
+  margin-top: 235px;
+}
+
+#wh_personMyAddress > p > span {
+  color: rgb(236, 106, 23);
+  font-size: 20px;
+}
+
+/*****************************  第八个页面(地址管理(有地址))  *************************************/
+
+#wh_personAllAddress > div {
+  height: 58px;
+  border-bottom: 1px solid rgb(211, 211, 211);
+}
+
+/*收货地址文字*/
+
+#wh_personAllAddress > div > span {
+  display: inline-block;
+  width: 80px;
+  height: 57px;
+  line-height: 57px;
+  color: rgb(0, 141, 225);
+  font-size: 15px;
+  padding-left: 20px;
+}
+
+/*添加新地址button*/
+
+#wh_personAllAddress > div > button {
+  width: 90px;
+  height: 30px;
+  margin-left: 775px;
+  background-color: rgb(236, 106, 23);
+  border: 0;
+  outline: 0;
+  border-radius: 7px;
+  color: white;
+}
+
+/*地址管理(有地址)的第二个div(标题)*/
+
+#wh_personAllAddress > div:nth-of-type(2) span {
+  height: 57px;
+  text-align: center;
+  width: 100px;
+}
+
+/*序号文字span*/
+
+#wh_personAllAddress > div:nth-of-type(2) span:nth-of-type(1) {
+  width: 50px;
+}
+
+/*收货人文字span*/
+
+#wh_personAllAddress > div:nth-of-type(2) span:nth-of-type(2) {
+  width: 65px;
+}
+
+/*所在区域文字span*/
+
+#wh_personAllAddress > div:nth-of-type(2) span:nth-of-type(3) {
+  width: 165px;
+}
+
+/*街道地址文字span*/
+
+#wh_personAllAddress > div:nth-of-type(2) span:nth-of-type(4) {
+  width: 175px;
+}
+
+/*备注文字span*/
+
+#wh_personAllAddress > div:nth-of-type(2) span:nth-of-type(6) {
+  width: 150px;
+}
+
+/*地址管理(有地址)的ul里面的li(内容)*/
+
+#wh_personAllAddress > ul li span {
+  padding-left: 20px;
+  display: inline-block;
+  width: 100px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+#wh_personAllAddress > ul li span:nth-of-type(1) {
+  width: 50px;
+}
+
+#wh_personAllAddress > ul li span:nth-of-type(2) {
+  width: 65px;
+}
+
+#wh_personAllAddress > ul li span:nth-of-type(3) {
+  width: 165px;
+}
+
+#wh_personAllAddress > ul li span:nth-of-type(4) {
+  width: 175px;
+}
+
+#wh_personAllAddress > ul li span:nth-of-type(6) {
+  width: 150px;
+}
+
+/*****************************  第九个页面(地址管理(添加新地址))  *************************************/
+
+#wh_personAddAddress > div:nth-of-type(1) {
+  height: 58px;
+  border-bottom: 1px solid rgb(211, 211, 211);
+}
+
+/*添加新地址中的添加新地址文字*/
+
+#wh_personAddAddress > div:nth-of-type(1) > span {
+  display: inline-block;
+  width: 80px;
+  height: 57px;
+  line-height: 57px;
+  color: rgb(0, 141, 225);
+  font-size: 15px;
+  padding-left: 20px;
+}
+
+/*所有p标签里面的橙色的必选标签(*)*/
+
+#wh_personAddAddress > div:nth-of-type(2) > span:nth-of-type(1),
+#wh_personAddAddress > p > span:nth-of-type(1) {
+  color: rgb(237, 119, 54);
+}
+
+/*所有的下方div和p标签的公共样式*/
+
+#wh_personAddAddress > div:nth-of-type(n + 2),
+#wh_personAddAddress > p {
+  margin: 30px 0 30px 40px;
+}
+
+/*收货人姓名p标签中的input*/
+
+#wh_personAddAddress > p:nth-of-type(1) > input {
+  width: 490px;
+  height: 35px;
+  border: 1px solid rgb(211, 211, 211);
+  margin-left: 20px;
+  font-size: 15px;
+}
+
+/*所在地区div*/
+
+#wh_personAddAddress > div:nth-of-type(2) {
+  margin-left: 55px;
+}
+
+/*省市区三级联动div*/
+
+#wh_personAddAddress > div:nth-of-type(2) > div {
+  display: inline-block;
+  margin-left: 24px;
+}
+
+/*省市区三级联动div里面的select框样式*/
+
+#wh_personAddAddress > div:nth-of-type(2) > div select {
+  width: 105px;
+  height: 35px;
+  border: 1px solid rgb(211, 211, 211);
+  background-color: white;
+  text-align: center;
+  font-size: 15px;
+  margin-right: 80px;
+}
+
+/*详细地址p标签*/
+
+#wh_personAddAddress > p:nth-of-type(2) {
+  margin-left: 55px;
+}
+
+/*联系电话p标签*/
+
+#wh_personAddAddress > p:nth-of-type(3) {
+  margin-left: 55px;
+}
+
+/*详细地址p标签中的input*/
+
+#wh_personAddAddress > p:nth-of-type(2) > input {
+  width: 490px;
+  height: 35px;
+  border: 1px solid rgb(211, 211, 211);
+  margin-left: 20px;
+  font-size: 15px;
+}
+
+/*联系电话中的input(手机号)*/
+
+#wh_personAddAddress > p:nth-of-type(3) > input:nth-of-type(1) {
+  width: 150px;
+  height: 35px;
+  border: 1px solid rgb(211, 211, 211);
+  margin-left: 20px;
+  margin-right: 20px;
+  font-size: 15px;
+  text-align: center;
+}
+
+#wh_personAddAddress > p:nth-of-type(3) > input:nth-of-type(2) {
+  width: 55px;
+  height: 35px;
+  border: 1px solid rgb(211, 211, 211);
+  margin-left: 20px;
+  font-size: 15px;
+  text-align: center;
+}
+
+#wh_personAddAddress > p:nth-of-type(3) > input:nth-of-type(3) {
+  width: 120px;
+  height: 35px;
+  border: 1px solid rgb(211, 211, 211);
+  margin-left: 20px;
+  font-size: 15px;
+  text-align: center;
+}
+
+/*设置为常用地址p标签*/
+
+#wh_personAddAddress > p:nth-of-type(4) {
+  margin-left: 165px;
+}
+
+#wh_personAddAddress > p:nth-of-type(4) > input {
+  vertical-align: middle;
+}
+
+/*设置为常用地址文字*/
+
+#wh_personAddAddress > p:nth-of-type(4) > span {
+  color: #000;
+  font-size: 18px;
+  vertical-align: middle;
+}
+
+/*确认提交按钮*/
+
+#wh_personAddAddress > p:nth-of-type(5) {
+  margin-left: 300px;
+}
+
+#wh_personAddAddress > p:nth-of-type(5) button {
+  width: 170px;
+  height: 45px;
+  background-color: rgb(236, 106, 23);
+  color: white;
+  border: 0;
+  outline: 0;
+  font-size: 20px;
+}

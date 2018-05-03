@@ -1,0 +1,393 @@
+
+#wh_goodsDetail{
+    width: 1180px;
+    height: 520px;
+    margin: 0 auto;
+    position: relative;
+    border: 1px solid rgb(211, 211, 211);
+    margin-top: 10px;
+    background-color: white;
+}
+#wh_goodsDetail0{
+    width: 1180px;
+    height: 40px;
+    color: #666666;
+    font-size: 12px;
+    line-height: 40px;
+    margin: auto;
+}
+#wh_goodsDetail0>p>span:nth-child(2){
+    color: #ec6a17;
+}
+/*上部样式开始*/
+/*swiper样式开始*/
+#wh_detailTop {
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #000;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    height: 100%;
+    top: 25px;
+    left: 15px;
+
+
+}
+/*上方大图*/
+#wh_goodsDetail .swiper-container {
+    width: 360px;
+    height: 360px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#wh_goodsDetail .swiper-container .swiper-slide {
+    width: 360px;
+    height: 360px;
+    background-size: cover;
+    background-position: center;
+}
+
+#wh_goodsDetail .gallery-top {
+    width: 360px;
+    height: 360px;
+}
+
+/*下方小图div*/
+#wh_goodsDetail .gallery-thumbs {
+    height: 20%;
+    box-sizing: border-box;
+}
+/*下方小图*/
+#wh_goodsDetail .gallery-thumbs .swiper-slide {
+    width: 100px;
+    height: 100px;
+    opacity: 0.4;
+}
+/*活动的时候*/
+#wh_goodsDetail .gallery-thumbs .swiper-slide-active {
+    width: 100px;
+    height: 100px;
+    opacity: 1;
+}
+/*swiper样式结束*/
+
+
+
+
+/*上部中间div样式*/
+#wh_detailTop1{
+    width: 570px;
+    height: 450px;
+    position: absolute;
+    top: 15px;
+    left: 400px;
+}
+/*男士短衬衫文字*/
+#wh_detailTop1>p:nth-of-type(1){
+    color: rgb(0, 141, 255);
+    font-size: 22px;
+    margin: 0 0 10px;
+}
+/*海澜之家文字*/
+#wh_detailTop1>p:nth-of-type(2){
+    color: black;
+    line-height: 30px;
+}
+/*hr标签*/
+#wh_detailTop1>hr{
+    margin: 20px 0;
+}
+/*尺码*/
+#wh_detailShirtSize{
+    width: 100%;
+    height: 50px;
+}
+/*尺码文字*/
+#wh_detailShirtSize>span{
+    display: inline-block;
+    font-size: 20px;
+    margin-top: 10px;
+}
+/*尺码button*/
+#wh_detailShirtSize>button{
+    margin: 0 10px;
+    width: 50px;
+    height: 30px;
+    background-color: white;
+    border: 2px solid rgb(211, 211, 211);
+    vertical-align: bottom;
+    outline: none;
+}
+#wh_detailShirtSize>button:nth-of-type(1){
+    border: 2px solid rgb(236, 106, 23);
+}
+
+/*颜色*/
+#wh_detailShirtColor{
+    width: 100%;
+    height: 50px;
+}
+/*颜色文字*/
+#wh_detailShirtColor>span{
+    display: inline-block;
+    font-size: 20px;
+    margin-top: 10px;
+}
+/*颜色button*/
+#wh_detailShirtColor>button{
+    margin: 0 10px;
+    width: 50px;
+    height: 30px;
+    background-color: white;
+    border: 2px solid rgb(211, 211, 211);
+    vertical-align: bottom;
+    outline: none;
+}
+#wh_detailShirtColor>button:nth-of-type(1){
+    border: 2px solid rgb(236, 106, 23);
+}
+
+/*价格*/
+#wh_detailShirtPrice{
+    width: 100%;
+    height: 110px;
+    border: 1px solid rgb(225, 225, 225);
+
+}
+#wh_detailShirtPrice p{
+    margin-top: 10px;
+    margin-left: 20px;
+}
+/*现价文字*/
+#wh_detailShirtPrice p:nth-of-type(1) span:nth-of-type(1){
+    font-size: 20px;
+    color: red;
+}
+/*原价文字*/
+#wh_detailShirtPrice p:nth-of-type(1) span:nth-of-type(2){
+    font-size: 15px;
+    color: rgb(102, 102, 102);
+}
+/*购买*/
+#wh_detailShirtPrice p:nth-of-type(1) span:nth-of-type(3){
+    font-size: 15px;
+    color: rgb(102, 102, 102);
+    margin-left: 50px;
+}
+/*数量*/
+#wh_detailShirtPrice p:nth-of-type(2){
+    width: 550px;
+    height: 50px;
+    line-height: 50px;
+}
+#wh_detailShirtPrice p:nth-of-type(2)>span:nth-of-type(2){
+    display: inline-block;
+    width: 50px;
+    height: 25px;
+    background-color: white;
+    border: 1px solid rgb(211, 211, 211);
+    text-align: center;
+    vertical-align: middle;
+    line-height: 25px;
+}
+#wh_detailShirtPrice p:nth-of-type(2)>button{
+    width: 25px;
+    height: 29px;
+}
+/*加入购物车和立即购买*/
+#wh_detailShirtPrice p:nth-of-type(2)>a{
+    display: inline-block;
+    width: 150px;
+    height: 50px;
+    background-color: rgb(236, 106, 23);
+    text-align: center;
+    font-size: 20px;
+    color: white;
+    margin: 5px 15px;
+    border-radius: 10px;
+}
+
+#wh_detailShirtShare{
+    margin-top: 5px;
+    width: 570px;
+    height: 33px;
+    line-height: 33px;
+}
+#wh_detailShirtShare i{
+    font-size: 30px;
+    vertical-align: middle;
+}
+
+
+/*上部右侧div样式*/
+#wh_detailTop2{
+    width: 140px;
+    height: 450px;
+    position: absolute;
+    top: 15px;
+    left: 1008px;
+}
+/*上部右侧所有的a标签*/
+#wh_detailTop2 a{
+    display: inline-block;
+    width: 140px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 7px;
+    margin: 15px auto;
+    color: white;
+}
+/*点击进入商家a标签*/
+#wh_detailTop2 a:nth-of-type(1){
+    background-color: rgb(0, 141, 255);
+    margin-bottom: 40px;
+}
+/*QQ客服1的a标签*/
+#wh_detailTop2 a:nth-of-type(2){
+    background-color: rgb(236, 106, 23);
+}
+/*QQ客服2的a标签*/
+#wh_detailTop2 a:nth-of-type(3){
+    background-color: rgb(236, 106, 23);
+}
+/*上部样式结束*/
+
+
+/*下部样式开始*/
+#wh_goodsThreeDiv{
+    width: 1180px;
+    height: 1050px;
+    margin: 10px auto 0;
+    border: 1px solid rgb(211, 211, 211);
+}
+/*上部导航条*/
+#wh_goodsNav{
+    border-bottom: 1px solid rgb(211, 211, 211);
+    width: 1180px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 0;
+}
+/*上部导航条a标签*/
+#wh_goodsNav a{
+    display: inline-block;
+    width: 125px;
+    height: 50px;
+    border-right: 1px solid rgb(211, 211, 211);
+    text-align: center;
+    font-size: 20px;
+}
+
+/*商品详情的a标签的默认显示样式*/
+#wh_goodsNav a:nth-of-type(1){
+    border-top: 2px solid blue;
+    background-color: white;
+    border-bottom: 0;
+}
+
+/*商品详情评价成交*/
+#wh_goodsOne,#wh_goodsTwo,#wh_goodsThree{
+    width: 1180px;
+    height: 1000px;
+    background-color: white;
+    text-align: center;
+    border-bottom: 1px solid rgb(211, 211, 211);
+}
+/*商品详情页面(默认显示)*/
+#wh_goodsOne{
+    display: block;
+}
+#wh_goodsOne p{
+    width: 1121px;
+    padding-top: 10px;
+    margin: 0 auto;
+    text-align: left;
+}
+/*男士短衬衫文字*/
+#wh_goodsOne p:nth-of-type(1),#wh_goodsOne p:nth-of-type(3){
+    font-size: 20px;
+    color: rgb(236, 106, 23);
+}
+#wh_goodsOne img{
+    width: 1121px;
+    margin-top: 20px;
+}
+
+
+
+/*商品评价页面(默认隐藏)*/
+#wh_goodsTwo{
+    display: none;
+}
+
+#wh_goodsTwo ul li{
+    text-align: left;
+    padding-top: 55px;
+    margin-left: 55px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid gray;
+}
+#wh_goodsTwo ul li div{
+    display: inline-block;
+}
+#wh_goodsTwo ul li div img{
+    width: 80px;
+    height: 80px;
+}
+#wh_goodsTwo ul li div:nth-of-type(1){
+    vertical-align: top;
+}
+
+
+/*商品成交页面(默认隐藏)*/
+#wh_goodsThree{
+    display: none;
+}
+#wh_goodsThree ul{
+    padding-top: 20px;
+}
+/*所有的li*/
+#wh_goodsThree ul li{
+    text-align: left;
+    margin: 20px 0 20px 60px;
+    border-bottom: 1px dotted rgb(153, 153, 153);
+    padding-bottom: 20px;
+}
+/*第一个li的样式单独写(文字大小颜色,下边框)*/
+#wh_goodsThree ul li:nth-of-type(1){
+    font-size: 18px;
+    color: black;
+    border-bottom: 1px solid rgb(211, 211, 211);
+
+}
+
+/*所有的span*/
+#wh_goodsThree ul li span{
+    margin-right: 125px;
+}
+/*第二个span的颜色单独写*/
+#wh_goodsThree ul li span:nth-of-type(2){
+    color: rgb(236, 106, 23);
+}
+/*第一个li下面的span样式单独写(margin-right)*/
+#wh_goodsThree ul li:nth-of-type(1) span{
+    margin-right: 163px;
+    color: black;
+}
+
+/*下部样式结束*/
+
+
+
+
+
+
+
+
+
+
+
+

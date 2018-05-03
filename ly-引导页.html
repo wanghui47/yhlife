@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+</head>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+
+        }
+        a{
+            text-decoration: none;
+        }
+        #ly-wrap{
+            width: 100%;
+            height: 100%;
+        }
+        #ly-wrap .ly-logo{
+            height: 35px;
+            width: 100%;
+            background-color: #eeeeee;
+            font-size: 14px;
+        }
+        #ly-wrap .ly-logo>.top{
+            width: 1180px;
+            margin: 0 auto;
+        }
+        #ly-wrap .ly-logo>.top>span{
+            color: #666666;
+            float: left;
+            line-height: 35px;
+
+        }
+        #ly-wrap .ly-logo-r{
+            float: right;
+            color: #666666;
+            line-height: 35px;
+
+        }
+        #ly-wrap .ly-logo-r>span:nth-child(1){
+            padding-right: 20px;
+            border-right: 1px solid #666666;
+        }
+        #ly-wrap .ly-logo-tu{
+            background-color: white;
+        }
+        #ly-wrap .ly-logo-r>img{
+            padding-left: 20px;
+        }
+        #ly-wrap .ly-logo-tu>.denglu{
+            width: 1180px;
+            margin: 0 auto;
+        }
+        #ly-wrap .ly-logo-tu>.denglu>img{
+            width: 72px;
+            height: 41px;
+            margin-top: 20px;
+            padding-bottom: 20px;
+        }
+        #ly-wrap .ly-logo-tu-r{
+            float: right;
+            line-height: 86px;
+            color: #666666;
+            font-size: 14px;
+        }
+        #ly-wrap .ly-logo-tu-r>span:nth-child(1){
+            padding-right: 20px;
+            border-right: 1px solid #666666;
+        }
+        #ly-wrap .ly-logo-tu-r>span:nth-child(2){
+            padding-left: 20px;
+        }
+        #ly-wrap .ly-content{
+            background: url("img/ly-download.jpg") no-repeat;
+            background-size: 100% 100%;
+            height: 650px;
+            margin-top: -10px;
+            border-bottom: 1px solid #d3d3d3;
+        }
+        #ly-wrap .ly-content>.content{
+            width: 1180px;
+            margin: 0 auto;
+            height: 650px;
+            position: relative;
+            padding-top: 100px;
+        }
+        #ly-wrap .ly-content>.content>p{
+            color: white;
+            font-size: 30px;
+            width: 300px;
+            margin: 0 auto;
+        }
+        #ly-wrap .ly-content-city{
+            position: relative;
+            top:100px;
+            left: 250px;
+        }
+        #ly-wrap .ly-content-city>input{
+            border: none;
+            width: 360px;
+            padding: 15px;
+        }
+        #ly-wrap .ly-content-city>span{
+            position: absolute;
+            padding: 11.5px 20px;
+            background-color: white;
+            border-left: 1px solid darkgray;
+        }
+        #ly-wrap .ly-content-info>span{
+            position: relative;
+            top:66px;
+            left: 740px;
+            background-color: #ec6a17;
+            padding: 11.5px 20px;
+            color: white;
+        }
+        #ly-wrap .ly-content-info>span>a{
+            color: white;
+        }
+        #ly-wrap .ly-bottom{
+            width: 515px;
+            margin: 30px auto;
+        }
+        #ly-wrap .ly-bottom>p:nth-child(1){
+            color: #999999;
+        }
+        #ly-wrap .ly-bottom>p:nth-child(2){
+            color: #008de1;
+            margin-left: 140px;
+            font-size: 19px;
+            font-weight: 200;
+        }
+        .ly-choose{
+            width: 600px;
+            height: 300px;
+            background-color: white;
+            position: absolute;
+            top:320px;
+            left: 250px;
+            overflow: scroll;
+            margin: 0 auto;
+            display: none;
+        }
+        .ly-group-title{
+            padding: 20px 10px;
+            border-bottom: 1px solid darkgray;
+            color: gray;
+        }
+        .ly-group-title>a{
+            color: red;
+            padding: 2px 5px;
+            border: 1px solid red;
+            text-decoration: none;
+            font-size: 14px;
+        }
+        .city-area{
+            border-bottom: 1px solid darkgray;
+            padding: 20px 30px;
+        }
+        .city-area>a{
+            text-decoration: none;
+            color: darkgray;
+        }
+    </style>
+<body>
+<div id="ly-wrap">
+    <div class="ly-logo">
+        <div class="top">
+            <span>欢迎光临易和生活港</span>
+            <div class="ly-logo-r">
+                <span>我是商家</span>
+                <img src="img/ly-1-5.png" alt="">
+                <span>400-800-8820</span>
+            </div>
+        </div>
+    </div>
+    
+    <div class="ly-logo-tu">
+        <div class="denglu">
+            <img src="img/ly-download.png" alt="">
+            <div class="ly-logo-tu-r">
+                <span><a href="denglu.html">登录</a></span>
+                <span><a href="zhuce.html">注册</a></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="ly-content">
+        <div class="content">
+            <p>易和生活 , 纵享品质</p>
+            <div class="ly-content-city">
+                <input type="text" placeholder="请选择您所在的城市">
+                <span class="ly-city-zheng">郑州</span>
+            </div>
+            <div class="ly-content-info">
+                <span><a href="denglu.html">进入易和</a></span>
+            </div>
+            <!--城市选择-->
+            <div class="ly-choose">
+                <div class="ly-group-title">
+                    热门城市:
+                    <a href="###">哈尔滨</a>
+                    <a href="###">烟台</a>
+                </div>
+                <div class="city-area">
+                    <a href="###">安阳</a>
+                </div>
+                <div class="city-area">
+                    <a href="###">北京</a>
+                    <a href="###">包头</a>
+                    <a href="###">本溪</a>
+                </div>
+                <div class="city-area">
+                    <a href="###">长春</a>
+                </div>
+                <div class="city-area">
+                    <a href="###">大连</a>
+                </div>
+                <div class="city-area">
+                    <a href="###">抚顺</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="ly-bottom">
+        <p>版权所有 2016易和生活港 保留所有权利 | 沪ICP备12046163</p>
+        <p>易和生活 纵享品质</p>
+    </div>
+</div>
+</body>
+</html>
+<script>
+    var i = true
+    $("input").click(function () {
+        if(i){
+            $(".ly-choose").css("display","block");
+            i=!i;
+        }else{
+            $(".ly-choose").css("display","none");
+            i=!i;
+        }
+    })
+    $(".city-area>").click(function () {
+//        console.log($(this).html())
+        $(".ly-city-zheng").html($(this).html())
+    })
+</script>

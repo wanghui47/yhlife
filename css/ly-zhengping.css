@@ -1,0 +1,30 @@
+#ly-zhengping-content{
+    width: 1180px;
+    height: 1825px;
+    border: 1px solid #d3d3d3;
+    background-color: white;
+    margin: 0 auto;
+}
+#ly-zhengping-content>.location{
+    height: 50px;
+    color: #666666;
+    font-size: 12px;
+    line-height: 50px;
+}
+#ly-zhengping-content>.location>p>span{
+    color: #ec6a17;
+}
+#ly-zhengping-content .location p span:nth-child(2){
+    color: #ec6a17;
+}
+#ly-zhengping-content .ly-about-one img{
+    margin-top: 30px;
+    margin-left: 40px;
+}
+#ly-zhengping-content .ly-about-r .ly-about-r-top>p{
+    float: right;
+    margin-right: 540px;
+    font-size: 25px;
+    color: #2684c7;
+    margin-top: 20px;
+}

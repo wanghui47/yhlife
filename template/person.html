@@ -1,0 +1,581 @@
+<div id="wh_personWrap">
+    <!--左边div开始-->
+    <div id="wh_personLeft">
+        <span>
+            <i class="iconfont icon-ren-copy"></i>
+            <span>个人中心</span>
+        </span>
+        <ul>
+            <li class="wh_personLeftLi">交易管理&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&gt;</li>
+            <li flag="1" class="wh_canClick">我的账户</li>
+            <li flag="2" class="wh_canClick">我的订单</li>
+            <li flag="3" class="wh_canClick">我的积分</li>
+            <li flag="4" class="wh_canClick">我的易和券</li>
+            <li class="wh_personLeftLi">会员资料&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&gt;</li>
+            <li flag="5" class="wh_canClick">个人资料</li>
+            <li flag="6" class="wh_canClick">地址管理</li>
+            <li flag="7" class="wh_canClick">我的收藏</li>
+            <li flag="8" class="wh_canClick">最近浏览</li>
+            <li flag="9" class="wh_canClick">修改密码</li>
+            <li class="wh_personLeftLi">站内信&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&gt;</li>
+            <li flag="10" class="wh_canClick">我的消息</li>
+        </ul>
+    </div>
+    <!--左边div结束-->
+
+    <!--个人资料绑定手机开始-->
+    <div id="wh_personBindPhone" class="personDivAll disNone">
+        <div id="wh_perRightTop">
+            <p>绑定手机</p>
+        </div>
+        <!--右下开始-->
+        <div id="wh_perRightBottom">
+            <input type="number" placeholder="&nbsp;&nbsp;&nbsp;请输入手机号">
+            <input type="password" placeholder="&nbsp;&nbsp;&nbsp;请输入密码(6-20位号码字符)" maxlength="20" ng-change="pason()" ng-model="ddd">
+            <i class="iconfont icon-hongsechahao"></i>
+            <i class="iconfont icon-lvsewanchengduigou"></i>
+
+            <input type="password" placeholder="&nbsp;&nbsp;&nbsp;请再次输入密码(两次密码不一致会报错)" maxlength="20" ng-change="pason1()" ng-model="ccc">
+            <i class="iconfont icon-hongsechahao" ng-show="true"></i>
+            <i class="iconfont icon-lvsewanchengduigou"></i>
+            <!--验证码开始-->
+            <div>
+                <input type="text" id="code_input" value="" placeholder="&nbsp;&nbsp;&nbsp;图形验证码" />
+                <div id="wh_vContainer"></div>
+                <span>看不清?点击图片换一张</span>
+            </div>
+
+            <div>
+                <input type="text" placeholder="手机验证码">
+                <button id="my_button">获取手机验证码</button>
+                <button>
+                    有效期:<span>60</span>s
+                </button>
+            </div>
+            <!--验证码结束-->
+            <div>
+                <button>点击绑定</button>
+            </div>
+        </div>
+        <!--右下结束-->
+    </div>
+    <!--个人资料绑定手机结束-->
+
+    <!--我的账户开始(默认显示)-->
+    <div id="wh_personMyCount" class="personDivAll disBlock">
+        <div>
+            <div id="wh_countTop">
+                <img src="{{picsrc}}" alt="">
+                <span>您好,</span>
+                <span>{{userphone}}</span>
+                <span>我的积分</span>
+                <span>余额</span>
+                <span>易和券</span>
+                <!--修改积分-->
+                <span>{{score}}</span>
+                <span ng-bind="money | currency:'¥':2"></span>
+                <span>{{ticket}}</span>
+            </div>
+            <div id="wh_countMiddle">
+                <p>
+                    <span>我的会员等级</span>
+                    <span></span>
+                </p>
+                <p>
+                    <i class="iconfont icon-dengjiv1"></i>
+                    <span></span>
+                    <!--颜色span(开始高度为0)-->
+                    <span></span>
+                    <i class="iconfont icon-dengjiv2"></i>
+                    <span></span>
+                    <!--颜色span(开始高度为0)-->
+                    <span></span>
+                    <i class="iconfont icon-dengjiv3"></i>
+                    <span></span>
+                    <!--颜色span(开始高度为0)-->
+                    <span></span>
+                    <i class="iconfont icon-dengjiv4"></i>
+                    <span></span>
+                    <!--颜色span(开始高度为0)-->
+                    <span></span>
+                    <i class="iconfont icon-dengjiv5"></i>
+                    <span></span>
+                    <!--颜色span(开始高度为0)-->
+                    <span></span>
+                    <i class="iconfont icon-dengjiv6"></i>
+                    <span></span>
+                    <!--颜色span(开始高度为0)-->
+                    <span></span>
+                    <i class="iconfont icon-dengjiv7"></i>
+                </p>
+                <!--等级积分-->
+                <p id="wh_countClass">
+                    <span>(0-500)</span>
+                    <span>(501-2K)</span>
+                    <span>(2K-5K)</span>
+                    <span>(5K-2W)</span>
+                    <span>(2W-5W)</span>
+                    <span>(5W-10W)</span>
+                    <span>(10W+)</span>
+                </p>
+            </div>
+        </div>
+        <div id="wh_countBottom">
+            <img src="img/wh_myCountImg.png" alt="">
+        </div>
+
+    </div>
+    <!--我的账户结束-->
+
+    <!--我的订单开始-->
+    <div id="wh_personMyOrder" class="personDivAll disNone">
+        <div class="wh-mrorder">
+            <span>订单编号: 15043105000006958388</span>
+            <span>订单状态:</span>
+            <span>待付款</span>
+            <button>取消订单</button>
+            <button>立即支付</button>
+        </div>
+
+
+        <div class="wh-zhifu">
+            <ul>
+                <li>支付方式</li>
+                <span class="span1">支付宝</span>
+                <li>支付流水号</li>
+                <span class="span1">4643196461647896166</span>
+                <li>下单时间</li>
+                <span class="span1">2016-04-03</span>
+                <span class="span2">16:11:38</span>
+                <li>支付时间</li>
+                <li>发货时间</li>
+                <li>收货时间</li>
+                <li>取消时间</li>
+                <li>申请退款时间</li>
+                <li>退款原因</li>
+                <li>退款时间</li>
+                <li>订单备注</li>
+                <span class="span1">希望包裹的严实一点,不要有破损情况,谢谢</span>
+            </ul>
+        </div>
+
+        <div class="wh-massage">
+            <p>收货人信息</p>
+        </div>
+
+
+        <div class="wh-massage1">
+            <ul>
+                <li>收货人姓名</li>
+                <span class="span3">王敏敏</span>
+                <li>地址</li>
+                <span class="span3">郑州市莲花街55号</span>
+                <li>联系方式</li>
+                <span class="span3">手机:{{phonenumber}}/固定电话: 010-12548756</span>
+            </ul>
+        </div>
+
+
+        <div class="wh-massage">
+            <p>发票信息</p>
+        </div>
+
+
+        <div class="wh-massage1">
+            <ul>
+                <li>发票类型</li>
+                <span class="span3">电子发票</span>
+                <li>发票抬头</li>
+                <span class="span3">北京嘉和影业有限公司</span>
+                <li>发票</li>
+                <span class="span3">内容明细</span>
+            </ul>
+        </div>
+
+        <div class="wh-massage">
+            <p>卖家信息</p>
+        </div>
+
+        <div class="wh-massage1">
+            <ul>
+                <li>店铺名称</li>
+                <span class="span3">海澜之家旗舰店</span>
+                <li>真实姓名</li>
+                <span class="span3">赵敏芝</span>
+                <li>联系电话</li>
+                <span class="span3">0512-25664952</span>
+            </ul>
+        </div>
+
+        <div class="wh-massage">
+            <p>卖家信息</p>
+        </div>
+
+        <div class="wh-massage2">
+            <ul>
+                <li>店铺名称</li>
+                <span class="span4">海澜之家旗舰店</span>
+                <li>真实姓名</li>
+                <span class="span4">赵敏芝</span>
+            </ul>
+        </div>
+
+
+        <div class="wh-shangping0">
+            <div class="wh-shangpin">
+                <span class="span5">海澜之家旗舰店</span>
+                <span class="span6">金额</span>
+                <span class="span6">数量</span>
+                <span class="span6">单价</span>
+                <span class="span6">规格</span>
+            </div>
+
+            <div class="wh-nv">
+                <img src="img/ly-meinv.png" alt="">
+                <span class="span7">男士短衬衫</span>
+                <span class="span8">尺寸: 170</span><br>
+                <span class="span9">颜色: 红</span>
+                <span class="span10">¥11.8</span>
+                <span class="span11">1</span>
+                <span class="span12">¥11.8</span>
+            </div>
+            <div class="wh-nv">
+                <img src="img/ly-meinv.png" alt="">
+                <span class="span7">男士短衬衫</span>
+                <span class="span8">尺寸: 175</span><br>
+                <span class="span9">颜色: 红</span>
+                <span class="span10">¥11.8</span>
+                <span class="span11">1</span>
+                <span class="span12">¥11.8</span>
+            </div>
+
+
+            <div class="wh-all0">
+                <div class="wh-all">
+                    <span>小计</span>
+                </div>
+                <div class="wh-all1">
+                    <span>¥23.6</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="wh-jifen">
+            <span>使用积分抵扣(50积分)</span>
+            <span>-¥5.0</span>
+        </div>
+        <div class="wh-xian"></div>
+
+        <div class="wh-shifu">
+            <div class="wh-shifu-qian">
+                <span>实付金额:</span>
+                <span>¥18.6</span>
+            </div>
+            <div class="wh-shifu-dindan">
+                <button>取消订单</button>
+                <button>立即支付</button>
+            </div>
+        </div>
+
+
+    </div>
+
+    <!--我的订单结束-->
+
+    <!--我的积分开始-->
+    <div id="wh_personMyScore" class="personDivAll disNone">
+        <p>我的积分</p>
+        <!--积分信息开始-->
+        <p>
+            <span>累积积分:</span>
+            <span>{{score}}分</span>
+            <span>当前积:</span>
+            <span>{{score}}分</span>
+            <a href="javascript:void(0)">兑换记录</a>
+        </p>
+        <!--积分信息结束-->
+
+        <!--积分明细开始-->
+        <div>
+            <p>
+                <span>积分日期</span>
+                <span>积分</span>
+                <span>来源</span>
+            </p>
+            <ul ng-repeat="x in whScoreDetail">
+                <li>
+                    <!--可以使用ng-bind="x.time"-->
+                    <span>{{x.date}}&nbsp;{{x.time}}</span>
+                    <span ng-bind="x.detail"></span>
+                    <span>{{x.source}}</span>
+                </li>
+            </ul>
+        </div>
+        <!--积分明细结束-->
+
+        <!--兑换记录开始-->
+        <div>
+            <p>兑换记录为空</p>
+        </div>
+        <!--兑换记录结束-->
+    </div>
+    <!--我的积分结束-->
+
+    <!--我的易和券开始-->
+    <div id="wh_personMyTicket" class="personDivAll disNone">
+        <span>你有{{ticket}}张优惠券</span>
+    </div>
+    <!--我的易和券结束-->
+
+    <!--个人资料开始-->
+    <div id="wh_personMyData" class="personDivAll disNone">
+        <p>个人资料</p>
+        <form action="http://101.132.96.6/yhlife/server/uploadImage.php" method="post" enctype="multipart/form-data">
+            <ul>
+                <li>
+                    <span>当前头像：</span>
+                    <div>
+                        <img src="{{picsrc}}" alt="您还未上传头像" id="wh_face">
+                        <a href="javascript:void(0);" class="file">修改
+                            <input type="file" id="wh_faceUpload" name="icon">
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <span>昵称：</span>
+                    <div>
+                        <input type="text" placeholder="昵称" value="{{nickname}}" name="nickname">
+                    </div>
+                </li>
+                <li>
+                    <span>性别：</span>
+                    <div>
+                        <input type="radio" name="sex" value="1">男
+                        <input type="radio" name="sex" value="2">女
+                    </div>
+                </li>
+                <li>
+                    <span>生日:</span>
+                    <select name="year1"></select>
+                    <select name="month1"></select>
+                    <select name="day1"></select>
+                </li>
+                <li>
+                    <span>手机：</span>
+                    <div>
+                        <input type="text" placeholder="手机号码" value="{{phonenumber}}" name="phone">
+                        <a href="javascript:void(0)">更换手机</a>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <input type="submit" value="确认提交">
+                    </div>
+                </li>
+            </ul>
+        </form>
+    </div>
+    <!--个人资料结束-->
+
+    <!--地址管理(空地址)开始-->
+    <div id="wh_personMyAddress" class="personDivAll disNone">
+        <div>
+            <span>收货地址</span>
+            <button>添加新地址</button>
+        </div>
+        <p>暂无收货地址,请点击
+            <span>添加新地址</span>
+        </p>
+    </div>
+    <!--地址管理(空地址)结束-->
+
+    <!--我的收藏开始-->
+    <div id="wh_personMyFav" class="personDivAll disNone">
+        我的收藏
+    </div>
+    <!--我的收藏结束-->
+
+    <!--最近浏览开始-->
+    <div id="wh_personMyLook" class="personDivAll disNone">
+        最近浏览
+    </div>
+    <!--最近浏览结束-->
+
+    <!--修改密码开始-->
+    <div id="wh_personMyPassword" class="personDivAll disNone">
+        修改密码
+    </div>
+    <!--修改密码结束-->
+
+    <!--我的消息开始-->
+    <div id="wh_personMyMessage" class="personDivAll disNone">
+        我的消息
+    </div>
+    <!--我的消息结束-->
+
+
+    <!--地址管理(有地址)开始-->
+    <div id="wh_personAllAddress" class="personDivAll disNone">
+        <div>
+            <span>收货地址</span>
+            <button>添加新地址</button>
+        </div>
+        <div>
+            <span>序号</span>
+            <span>收货人</span>
+            <span>所在区域</span>
+            <span>街道地址</span>
+            <span>联系电话</span>
+            <span>备注</span>
+            <span>操作</span>
+        </div>
+        <ul>
+            <li ng-repeat="x in whAllAddress">
+                <!--$index+1  可以让地址前面的序号递增-->
+                <span ng-bind="$index+1"></span>
+                <span ng-bind="x.name"></span>
+                <span>{{x.address}}</span>
+                <span ng-bind="x.street"></span>
+                <span ng-bind="x.contact"></span>
+                <span ng-bind="x.note"></span>
+                <span>
+                    <a href="javascript:void (0)" ng-click="whAddressUpdate(x.id)"
+                       style="text-decoration: underline;color: blue;">修改</a>
+                    |
+                    <a href="javascript:void (0)" ng-click="whAddressDelete(x)"
+                       style="text-decoration: underline;color: blue;">删除</a>
+                </span>
+            </li>
+        </ul>
+    </div>
+    <!--地址管理(有地址)结束-->
+
+    <!--地址管理(添加新地址)开始-->
+    <div id="wh_personAddAddress" class="personDivAll disNone">
+        <div>
+            <span>添加新地址</span>
+        </div>
+        <!--1-->
+        <p>
+            <span>*</span>
+            <span>收货人姓名:</span>
+            <input type="text" placeholder="限制四个中文哟亲!" maxlength="4">
+        </p>
+
+        <div>
+            <span>*</span>
+            <span>所在地区:</span>
+            <div id="wh_citySelect">
+                <!--使用cityselect插件上半部分代码时,注开下面三行(还有最下方的三级联动js代码)-->
+                <!--<select class="prov"></select>-->
+                <!--<select class="city" disabled="disabled"></select>-->
+                <!--<select class="dist" disabled="disabled"></select>-->
+
+                <!--使用cityselect插件下半部分(带获取值的)-->
+                <input name="" id="sel1" type="text" value="北京-北京市-东城区" class="city_input" readonly="readonly">
+            </div>
+        </div>
+        <!--2-->
+        <p>
+            <span>*</span>
+            <span>详细地址:</span>
+            <input type="text">
+        </p>
+        <!--3-->
+        <p>
+            <span>*</span>
+            <span>联系电话:</span>
+            <input type="number" placeholder="限制数字哟亲">
+            <span>或固定电话:</span>
+            <input type="number" placeholder="区号">
+            <input type="number" placeholder="限制数字哟亲">
+        </p>
+        <!--4-->
+        <p>
+            <input type="checkbox">
+            <span>设置为常用地址</span>
+        </p>
+        <!--5-->
+        <p>
+            <button>确认提交</button>
+        </p>
+
+    </div>
+    <!--地址管理(添加新地址)结束-->
+
+    <div id="wh_emptyorder" class="disNone" style="width: 985px;height: 552px;background-color: white;border: 1px solid #d3d3d3;text-align: center;">
+        <span style="line-height: 552px;font-size: 30px">订单为空</span>
+    </div>
+</div>
+
+<!--验证码逻辑开始-->
+<script src="js/gVerify.js"></script>
+<!--验证码逻辑结束-->
+
+
+<!--省市区三级联动逻辑开始-->
+<script src="js/jquery.cityselect.js"></script>
+<script>
+    //    $(function () {
+    //        $("#wh_citySelect").citySelect({
+    //            prov: "河南",
+    //            city: "郑州",
+    //            dist: "高新区",
+    //            nodata: "none"
+    //        });
+    //    });
+</script>
+<!--省市区三级联动逻辑结束-->
+
+
+<!--头像上传逻辑开始-->
+<script type="text/javascript">
+    $(function() {
+        function getObjectURL(file) {
+            var url = null;
+            if (window.createObjectURL != undefined) { // basic
+                url = window.createObjectURL(file);
+            } else if (window.URL != undefined) { // mozilla(firefox)
+                url = window.URL.createObjectURL(file);
+            } else if (window.webkitURL != undefined) { // webkit or chrome
+                url = window.webkitURL.createObjectURL(file);
+            }
+            return url;
+        }
+
+        $("#wh_faceUpload").change(function() {
+            var objUrl = getObjectURL(this.files[0]);
+            var size = this.files[0].size;
+            if (size >= 1024000 * 10) {
+                bottomTip("图片超过10M了哦", 0);
+            } else {
+                if (objUrl) {
+                    $("#wh_face").attr("src", objUrl);
+                }
+            }
+        });
+    })
+</script>
+<!--头像上传逻辑结束-->
+
+<script>
+    //    获取省市区信息函数
+    $(function() {
+        init_city_select($("#sel1"));
+    });
+    //    function getValue() {
+    //        alert($('#sel1').val());
+    //    }
+</script>
+
+<script>
+    var nowpay = $("#wh_personMyOrder>.wh-mrorder>button:nth-of-type(2)");
+    $(nowpay).click(function() {
+        alert("支付成功!");
+        $("#wh_personMyOrder").removeClass("disBlock");
+        $("#wh_personMyOrder").addClass("disNone");
+
+        $("#wh_emptyorder").removeClass("disNone");
+        $("#wh_emptyorder").addClass("disBlock");
+    });
+</script>

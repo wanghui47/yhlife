@@ -1,0 +1,69 @@
+<div id="ly-ordersubmit">
+    <div class="ly-content">
+        <div class="one">
+            <img src="img/whhome_logo.png" alt="易和生活港logo">
+            <ul class="ly-content-my">
+                <li>我的购物车</li>
+                <li>确认订单信息</li>
+                <li>订单提交成功</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="ly-duihao">
+        <i class="iconfont icon-duihao"></i>
+    </div>
+
+    <div class="ly-ordersubmit-jieshao">
+        <span>订单已提交,请于该页面完成支付</span>
+        <span>(离开该页面订单将被取消)</span>
+    </div>
+
+    <div class="ly-ordersubmit-add">
+        <i class="iconfont icon-weizhi"></i>
+        <span>送货至:</span>
+        <span class="ly-name">{{addr.name}}</span>
+        <span class="ly-tong">{{addr.address}}</span>
+        <span class="ly-tong">{{addr.street}}</span>
+        <span class="ly-tong">电话 {{addr.contact}}</span>
+    </div>
+    <div class="ly-payMoney">
+        <span>应付金额:</span>
+        <span>{{money}}</span>
+        <span>(在线支付)</span>
+        <span>订单编号: 425954156947</span>
+    </div>
+    <div class="ly-payWay">
+        <span>支付平台</span>
+    </div>
+
+    <div class="ly-payleixing">
+        <input type="radio" name="1">
+        <img src="./img/123.png" alt="">
+        <input type="radio" name="1">
+        <img src="./img/456.png" alt="">
+    </div>
+
+    <div class="ly-zhifuleixing">
+        <div>
+            <span>使用电脑支付</span>
+            <div>
+                <img src="./img/FRONT.png" alt="">
+            </div>
+            <button><a href="javascript:void(0)" ng-click="lijizhifu()">立即支付</a></button>
+            <span class="ly-saoyisao">使用支付宝钱包扫一扫付款</span>
+            <img class="ly-erweima" src="./img/ly-erweima.png" alt="">
+            <span class="ly-huo">或</span>
+        </div>
+
+
+    </div>
+
+
+
+
+
+
+
+
+</div>

@@ -1,0 +1,165 @@
+#ly-ordersubmit {
+  width: 1180px;
+  height: 1225px;
+  border: 1px solid #adadad;
+  margin: 0 auto;
+  margin-top: 25px;
+}
+#ly-ordersubmit > .ly-content {
+  width: 1118px;
+  /*border: 1px solid #adadad;*/
+  margin: 20px auto 0;
+  padding: 30px;
+  overflow: hidden;
+}
+#ly-ordersubmit > .ly-content > .one {
+  width: 1118px;
+  overflow: hidden;
+  padding-bottom: 40px;
+  border-bottom: 1px solid #d3d3d3;
+}
+#ly-ordersubmit > .ly-content > .one > img {
+  width: 140px;
+}
+#ly-ordersubmit > .ly-content > .one > .ly-content-my {
+  width: 730px;
+  height: 40px;
+  float: right;
+  margin-top: 45px;
+}
+#ly-ordersubmit > .ly-content > .one > .ly-content-my > li {
+  height: 40px;
+  float: left;
+  background-size: 100% 100%;
+  text-align: center;
+  line-height: 40px;
+}
+#ly-ordersubmit > .ly-content > .one > .ly-content-my > li:nth-child(1) {
+  width: 236px;
+  background: url('../img/rhjuxing1.png') no-repeat;
+}
+#ly-ordersubmit > .ly-content > .one > .ly-content-my > li:nth-child(2) {
+  width: 247px;
+  background: url('../img/ly-juxing1.png') no-repeat;
+}
+#ly-ordersubmit > .ly-content > .one > .ly-content-my > li:nth-child(3) {
+  width: 247px;
+  background: url('../img/ly-orange.jpg') no-repeat;
+}
+#ly-ordersubmit .ly-duihao {
+  margin-top: 75px;
+}
+#ly-ordersubmit .ly-duihao i {
+  color: #ec6a17;
+  font-size: 63px;
+  margin-left: 550px;
+}
+#ly-ordersubmit .ly-ordersubmit-jieshao {
+  margin-left: 380px;
+  margin-top: 30px;
+}
+#ly-ordersubmit .ly-ordersubmit-jieshao span:nth-child(2) {
+  color: #ec6a17;
+}
+
+#ly-ordersubmit .ly-ordersubmit-add {
+  width: 1105px;
+  height: 40px;
+  background-color: #fff3ec;
+  margin: 50px auto;
+}
+#ly-ordersubmit .ly-ordersubmit-add i {
+  color: #008ce1;
+  font-size: 20px;
+  line-height: 40px;
+  margin-left: 15px;
+}
+#ly-ordersubmit .ly-ordersubmit-add .ly-name {
+  margin-left: 10px;
+}
+#ly-ordersubmit .ly-ordersubmit-add .ly-tong {
+  margin-left: 6px;
+}
+#ly-ordersubmit .ly-payMoney {
+  margin-left: 35px;
+  font-size: 14px;
+  padding-bottom: 40px;
+  /*border-bottom: 1px solid red;*/
+}
+#ly-ordersubmit .ly-payMoney span:nth-child(2) {
+  color: #ec6a17;
+  font-size: 20px;
+}
+#ly-ordersubmit .ly-payMoney span:nth-child(4) {
+  float: right;
+  margin-right: 40px;
+}
+#ly-ordersubmit .ly-payWay {
+  width: 1110px;
+  margin: 0 auto;
+  border-bottom: 1px solid #adadad;
+  padding-bottom: 20px;
+}
+#ly-ordersubmit .ly-payWay span {
+  font-size: 14px;
+}
+#ly-ordersubmit .ly-payleixing {
+  width: 1110px;
+  margin: 0 auto;
+  line-height: 80px;
+}
+#ly-ordersubmit .ly-payleixing img {
+  width: 130px;
+  height: 40px;
+  border: 1px solid #d3d3d3;
+  vertical-align: middle;
+}
+#ly-ordersubmit .ly-zhifuleixing {
+  width: 1120px;
+  height: 400px;
+  margin: 0 auto;
+  border: 1px solid #adadad;
+}
+#ly-ordersubmit .ly-zhifuleixing div:nth-child(1) {
+  width: 690px;
+  height: 280px;
+  /*border: 1px solid red;*/
+  margin: 60px auto;
+  /*float: left;*/
+}
+#ly-ordersubmit .ly-zhifuleixing div:nth-child(1) span {
+  font-size: 14px;
+  color: #adadad;
+}
+#ly-ordersubmit .ly-zhifuleixing div:nth-child(1) > div img {
+  margin-top: 30px;
+}
+#ly-ordersubmit .ly-zhifuleixing div:nth-child(1) button {
+  width: 145px;
+  height: 45px;
+  background-color: #ec6a17;
+  border: none;
+  border-radius: 15px;
+  margin-top: 30px;
+}
+#ly-ordersubmit .ly-zhifuleixing div:nth-child(1) button a {
+  color: white;
+  font-size: 14px;
+}
+#ly-ordersubmit .ly-zhifuleixing > div span:nth-child(2) {
+  float: right;
+}
+#ly-ordersubmit .ly-zhifuleixing .ly-saoyisao {
+  float: right;
+  margin-top: -188px;
+}
+#ly-ordersubmit .ly-zhifuleixing .ly-erweima {
+  float: right;
+  margin-top: -120px;
+  width: 175px;
+}
+#ly-ordersubmit .ly-zhifuleixing .ly-huo {
+  float: right;
+  margin-right: 170px;
+  margin-top: -50px;
+}

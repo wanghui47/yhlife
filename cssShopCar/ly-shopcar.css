@@ -1,0 +1,204 @@
+#ly-shopcar {
+  width: 100%;
+  background-color: white;
+}
+
+#ly-shopcar > .ly-content {
+  width: 1118px;
+  border: 1px solid #adadad;
+  margin: 20px auto 0;
+  padding: 30px;
+  overflow: hidden;
+}
+#ly-shopcar > .ly-content > .one {
+  width: 1118px;
+  overflow: hidden;
+}
+#ly-shopcar > .ly-content > .one > img {
+  width: 140px;
+}
+#ly-shopcar > .ly-content > .one > .ly-content-my {
+  width: 730px;
+  height: 40px;
+  float: right;
+  margin-top: 45px;
+}
+#ly-shopcar > .ly-content > .one > .ly-content-my > li {
+  height: 40px;
+  float: left;
+  background-size: 100% 100%;
+  text-align: center;
+  line-height: 40px;
+}
+#ly-shopcar > .ly-content > .one > .ly-content-my > li:nth-child(1) {
+  width: 236px;
+  background: url('../img/ly-juxing2.png') no-repeat;
+}
+#ly-shopcar > .ly-content > .one > .ly-content-my > li:nth-child(2) {
+  width: 247px;
+  background: url('../img/ly-juxing1.png') no-repeat;
+}
+#ly-shopcar > .ly-content > .one > .ly-content-my > li:nth-child(3) {
+  width: 247px;
+  background: url('../img/ly-juxing3.png') no-repeat;
+}
+#ly-shopcar > .ly-content > .two {
+  height: 80px;
+  line-height: 100px;
+  text-align: left;
+  color: #666666;
+  border: 1px solid #d3d3d3;
+  border-right: none;
+  border-left: none;
+  margin-top: 30px;
+}
+#ly-shopcar > .ly-content > .two > i {
+  color: #ff8800;
+  font-size: 26px;
+  margin-right: 15px;
+}
+#ly-shopcar > .ly-content > .three {
+  width: 1116px;
+  margin-top: 20px;
+  border: 1px solid #d3d3d3;
+  overflow: hidden;
+}
+#ly-shopcar > .ly-content > .three > .table {
+  width: 1116px;
+  height: 40px;
+  line-height: 40px;
+  background-color: #f2f2f2;
+}
+#ly-shopcar > .ly-content > .three .same > div {
+  float: left;
+  text-align: center;
+}
+#ly-shopcar > .ly-content > .three .same > div:nth-child(1) {
+  padding-left: 20px;
+  width: 380px;
+  text-align: left;
+}
+#ly-shopcar > .ly-content > .three .same > div:nth-child(2) {
+  width: 200px;
+}
+#ly-shopcar > .ly-content > .three .same > div:nth-child(3) {
+  width: 100px;
+}
+#ly-shopcar > .ly-content > .three .same > div:nth-child(4) {
+  width: 150px;
+}
+#ly-shopcar > .ly-content > .three .same > div:nth-child(5) {
+  width: 100px;
+}
+#ly-shopcar > .ly-content > .three .same > div:nth-child(6) {
+  width: 166px;
+}
+#ly-shopcar > .ly-content > .three > .item {
+  width: 1116px;
+}
+#ly-shopcar > .ly-content > .three > .item > li {
+  height: 100px;
+  line-height: 100px;
+  border-bottom: 1px solid #d3d3d3;
+}
+#ly-shopcar > .ly-content > .three > .item > li > div > img {
+  width: 80px;
+  vertical-align: middle;
+}
+#ly-shopcar > .ly-content > .three > .item > li > .type {
+  line-height: 25px;
+  padding: 25px 0;
+  box-sizing: border-box;
+  font-size: 14px;
+  color: #999999;
+}
+#ly-shopcar > .ly-content > .three > .item > li > .price {
+  color: #666666;
+  font-size: 14px;
+}
+#ly-shopcar > .ly-content > .three > .item > li > .count {
+  color: #666666;
+  font-size: 14px;
+  padding: 39px 0;
+  box-sizing: border-box;
+}
+#ly-shopcar > .ly-content > .three > .item > li > .count > div {
+  width: 100px;
+  height: 20px;
+  border: 1px solid #d3d3d3;
+  margin: auto;
+}
+#ly-shopcar > .ly-content > .three > .item > li > .count > div > p {
+  width: 29px;
+  height: 20px;
+  line-height: 20px;
+  background-color: #f2f2f2;
+  float: left;
+  cursor: pointer;
+}
+#ly-shopcar > .ly-content > .three > .item > li > .count > div > .sub {
+  border-right: 1px solid #d3d3d3;
+}
+#ly-shopcar > .ly-content > .three > .item > li > .count > div > input {
+  display: inline-block;
+  width: 40px;
+  height: 20px;
+  line-height: 40px;
+  float: left;
+  border: none;
+  text-align: center;
+}
+#ly-shopcar > .ly-content > .three > .item > li > .count > div > .add {
+  border-left: 1px solid #d3d3d3;
+}
+#ly-shopcar > .ly-content > .three > .item > li > .totalprice {
+  color: #666666;
+  font-size: 14px;
+}
+#ly-shopcar > .ly-content > .three > .item > li > .del > a {
+  color: #008de1;
+  font-size: 16px;
+}
+#ly-shopcar > .ly-content > .three > .tPrice {
+  width: 150px;
+  height: 50px;
+  padding: 20px 150px 20px 816px;
+  text-align: center;
+  color: #414141;
+  line-height: 25px;
+}
+#ly-shopcar > .ly-content > .three > .tPrice > p:last-child {
+  color: #ff6c00;
+}
+#ly-shopcar > .ly-content > .four {
+  width: 1118px;
+  height: 30px;
+  line-height: 30px;
+  padding: 35px 0 0;
+  color: #008de1;
+}
+#ly-shopcar > .ly-content > .four > .checkAll {
+  cursor: pointer;
+}
+#ly-shopcar > .ly-content > .four > .delAll {
+  margin-left: 80px;
+  cursor: pointer;
+}
+#ly-shopcar > .ly-content > .four > .totalPrice {
+  color: #414141;
+  margin-right: 50px;
+}
+#ly-shopcar > .ly-content > .four > .totalPrice > span {
+  color: #ec6a17;
+}
+#ly-shopcar > .ly-content > .four > .next {
+  display: inline-block;
+  width: 100px;
+  height: 30px;
+  background-color: #ec6a17;
+  text-align: center;
+  line-height: 30px;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}

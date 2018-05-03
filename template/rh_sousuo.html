@@ -1,0 +1,27 @@
+<div id="rh_sousuo">
+    <div class="location">
+        <p>您当前的位置:搜索> <span>海澜之家旗舰店</span> </p>
+    </div>
+    <ul class="one">
+        <li class="fl" ng-repeat="x in searchResult">
+            <div class="img">
+                <a href="###">
+                    <img src="{{x.src}}" alt="网络颠簸,图片丢失,请刷新!">
+                </a>
+                <a href="###" class="shade">{{x.name}}</a>
+            </div>
+            <p>
+                <i class="iconfont icon-ren"></i>
+                <span ng-bind="x.ownername"></span>
+            </p>
+            <p>
+                <i class="iconfont icon-shouji"></i>
+                <span>{{x.phone}}</span>
+            </p>
+            <p>
+                <i class="iconfont icon-weizhi"></i>
+                <span ng-bind="x.address"></span>
+            </p>
+        </li>
+    </ul>
+</div>

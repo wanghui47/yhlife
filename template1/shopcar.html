@@ -1,0 +1,63 @@
+<div id="ly-shopcar">
+    <div class="ly-content">
+        <div class="one">
+            <img src="img/whhome_logo.png" alt="易和生活港logo">
+            <ul class="ly-content-my">
+                <li><a href="#/success">我的购物车</a></li>
+               <li>确认订单信息</li>
+               <li>订单提交成功</li>
+            </ul>
+        </div>
+        <p class="two"><i class="iconfont icon-gouwuche"></i>购物车</p>
+        <!--一个商家模板-->
+        <div class="three {{'hou'+$index}}" ng-repeat="y in shopCar1">
+            <div class="table same">
+                <div>
+                    <input type="checkbox"ng-model="master"/> &nbsp;<label>{{y._id}}</label>
+                </div>
+                <div>规格</div>
+                <div>单价</div>
+                <div>数量</div>
+                <div>金额</div>
+                <div>操作</div>
+            </div>
+            <!--一个商品模板-->
+            <ul class="item">
+                <li class="same"  ng-repeat="x in y.arr" >
+                    <div class="name">
+                        <input type="checkbox"ng-model="m" ng-checked="master" class="checked"/> &nbsp;
+                        <img src="img/ly-meinv.png" alt="">
+                        <span>{{x.name}}</span>
+                    </div>
+                    <div class="type">
+                        <p>尺寸: {{x.size}}</p>
+                        <p>颜色: {{x.color}}</p>
+                    </div>
+                    <div class="price" ng-bind="x.price"></div>
+                    <div class="count">
+                        <div>
+                            <p class="sub" ng-click="clickShopCarsub(x)">-</p>
+                            <input type="text" value="{{x.count}}"/>
+                            <p class="add" ng-click="clickShopCaradd(x)">+</p>
+                        </div>
+
+                    </div>
+                    <div class="totalprice">{{shoptotalprice(x)}}</div>
+                    <div class="del"><a href="javascript:void(0)" ng-click="deleteShop(x)">删除</a></div>
+
+                </li>
+            </ul>
+            <div class="tPrice">
+                <p>商品金额</p>
+                <p class="ren_price">{{"¥"+totalprice('hou'+$index,y)}}</p>
+            </div>
+
+        </div>
+        <div class="four">
+            <div class="fl checkAll" ng-click="clickQuanxuan()">全选</div>
+            <a href="javascript:void(0)" class="fr next" ng-click="next()">去结算</a>
+            <div class="fr totalPrice">商品总计: <span>{{getTotalMoney()}}</span></div>
+        </div>
+    </div>
+
+</div>

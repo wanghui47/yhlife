@@ -1,0 +1,373 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+#ly-denglu .ly-logo{
+    height: 35px;
+    width: 100%;
+    background-color: #eeeeee;
+    font-size: 14px;
+}
+#ly-denglu .ly-logo>.top{
+    width: 1180px;
+    margin: 0 auto;
+}
+#ly-denglu .ly-logo>.top>span{
+    color: #666666;
+    float: left;
+    line-height: 35px;
+
+}
+#ly-denglu .ly-logo-r{
+    float: right;
+    color: #666666;
+    line-height: 35px;
+
+}
+#ly-denglu .ly-logo-r>span:nth-child(1){
+    padding-right: 20px;
+    border-right: 1px solid #666666;
+}
+.top select{
+    margin-top: 7px;
+    margin-left: 10px;
+}
+.ly-content-one{
+    width: 1180px;
+    margin: 0 auto;
+}
+.ly-content-one>img{
+    margin-top: 25px;
+    padding-right: 30px;
+    margin-left: -60px;
+    border-right: 1px solid lightgrey;
+}
+.ly-content-one-huiyuan{
+    position: absolute;
+    font-size: 30px;
+    color: #666666;
+    font-weight: 200;
+    margin-top: 40px;
+    padding-left: 30px;
+}
+
+.ly-logo-one{
+    background: url("../img/ly-tucent10.png");
+    background-size: 100% 100%;
+    width: 100%;
+    height: 570px;
+    margin-top: 130px;
+
+}
+.ly-0{
+    width: 1180px;
+    margin: 0 auto;
+    position: relative;
+}
+.ly-1{
+    width: 300px;
+    height: 400px;
+    background-color: #ffffff;
+    position: absolute;
+    right: 100px;
+    top: 90px;
+}
+.ly-label{
+    float: left;
+    font-size: 20px;
+    color: #999999;
+    margin-top: 20px;
+    margin-left: 30px;
+}
+.ly-explain{
+    float: right;
+    font-size: 14px;
+    color: #008CE1;
+    height: 30px;
+    line-height: 65px;
+    text-decoration: none;
+    margin-right: 30px;
+}
+.ly-iphon{
+    border: 1px solid #d3d3d3;
+    box-sizing: border-box;
+    padding: 3px 8px;
+    background: #f9f9f9;
+    color: #666666;
+    height: 30px;
+    width: 240px;
+    margin-left: 30px;
+    margin-top: 25px;
+}
+.ly-yanzheng{
+    border: 1px solid #d3d3d3;
+    box-sizing: border-box;
+    padding: 3px 8px;
+    background: #f9f9f9;
+    color: #666666;
+    height: 35px;
+    width: 85px;
+    margin-left: 30px;
+    margin-top: 10px;
+}
+
+#v_container{
+    float: right;
+    margin-top: 10px;
+    margin-right: 100px;
+    width: 79px;
+    height: 34px;
+}
+.ly-change{
+    float: right;
+    font-size: 10px;
+    margin-top: -25px;
+    color: #ec6a17;
+    margin-right: 25px;
+}
+.ly-border{
+    border: 1px solid #d3d3d3;
+    width: 245px;
+    height: 35px;
+    margin-left: 30px;
+    margin-top: 10px;
+}
+.ly-phone-yanzheng{
+    box-sizing: border-box;
+    padding: 3px 8px;
+    background: #f9f9f9;
+    color: #666666;
+    height: 35px;
+    width: 245px;
+    border: none;
+}
+.ly-huoquyzm{
+    position: absolute;
+    background-color: #008CE1;
+    border: none;
+    color: white;
+    top: 223px;
+    right: 25px;
+    padding: 7px 10px;
+}
+.ly-zidongdenglu{
+    margin-left: 30px;
+    margin-top: 10px;
+}
+.ly-zidongdenglu span{
+    font-size: 10px;
+    color: #adadad;
+}
+.ly-zidongdenglu a{
+    font-size: 10px;
+    color: #ec6a17;
+    float: right;
+    margin-right: 24px;
+}
+.ly-denglu-zhuce input:nth-child(1){
+    background-color: #ec6a17;
+    border: none;
+    color: white;
+    padding: 10px 40px;
+    margin-left: 30px;
+    margin-top: 25px;
+    border-radius: 5px;
+}
+.ly-denglu-zhuce input:nth-child(2){
+    background-color: #008CE1;
+    float: right;
+    border: none;
+    color: white;
+    padding: 10px 40px;
+    margin-right: 20px;
+    margin-top: 25px;
+    border-radius: 5px;
+}
+.ly-youxian{
+    margin-top: 20px;
+    margin-left: 30px;
+    width: 70px;
+    height: 1px;
+    background-color: #adadad;
+}
+.ly-hezuo{
+    position: absolute;
+    font-size: 14px;
+    color: #adadad;
+    top: 305px;
+    left: 105px;
+}
+.ly-zuoxian{
+    float: right;
+    margin-right: 20px;
+    width: 70px;
+    height: 1px;
+    background-color: #adadad;
+}
+.ly-zhushi{
+    margin-top: 40px;
+}
+.ly-weixin-qq i:nth-child(1){
+    float: left;
+    color: #00cd0d;
+    font-size: 40px;
+    margin-left: 100px;
+    margin-top: 20px;
+}
+.ly-weixin-qq i:nth-child(2){
+    color: #008CE1;
+    font-size: 35px;
+    float: right;
+    margin-top: 24px;
+}
+#wh_foot{
+    width: 100%;
+    min-width: 1180px;
+    background-color: #fff;
+}
+
+
+
+/*底部上方div样式开始*/
+/*上方外部包裹div*/
+#wh_footTop{
+    width: 100%;
+    height: 85px;
+    background-color: rgb(226, 226, 226);
+}
+/*上方div内部的content*/
+#wh_footTopContent{
+    width: 1180px;
+    height: 85px;
+    margin: 0 auto;
+    position: relative;
+}
+#wh_footTopContent img{
+    position: absolute;
+    top: 20px;
+}
+#wh_footTopContent img:nth-of-type(1){
+    left: 20px;
+}
+#wh_footTopContent img:nth-of-type(2){
+    left: 260px;
+}
+#wh_footTopContent img:nth-of-type(3){
+    left: 500px;
+}
+#wh_footTopContent img:nth-of-type(4){
+    left: 750px;
+}
+#wh_footTopContent img:nth-of-type(5){
+    right: 130px;
+}
+
+
+#wh_footTopContent span{
+    line-height: 85px;
+    font-size: 25px;
+}
+#wh_footTopContent span:nth-of-type(1){
+    margin-left: 80px;
+}
+#wh_footTopContent span:nth-of-type(2){
+    margin-left: 130px;
+}
+#wh_footTopContent span:nth-of-type(3){
+    margin-left: 130px;
+}
+#wh_footTopContent span:nth-of-type(4){
+    margin-left: 140px;
+}
+#wh_footTopContent span:nth-of-type(5){
+    margin-left: 160px;
+}
+
+#wh_footTopContent span{
+    display: inline-block;
+}
+/*底部上方div样式结束*/
+
+
+/*底部中间div样式开始*/
+#wh_footMiddle{
+    width: 1180px;
+    height: 260px;
+    margin: 0 auto;
+}
+/*易和logo*/
+#wh_footMiddle>img{
+    width: 230px;
+    height: 130px;
+    margin-top: 50px;
+    margin-right: 50px;
+}
+/*底部中间里面的p*/
+#wh_footMiddle>p{
+    display: inline-block;
+    text-align: center;
+    margin-top: 45px;
+    margin-left: 30px;
+}
+/*包含二维码的所有的p*/
+#wh_footMiddle>p>img{
+    width: 135px;
+}
+#wh_footMiddle>p:nth-of-type(2){
+    margin-right: 20px;
+}
+/*第二个二维码的p*/
+#wh_footMiddle>p:nth-of-type(2)>span{
+    margin-right: 30px;
+}
+#wh_footMiddle>div{
+    margin-top: 42px;
+    float: right;
+    margin-right: 30px;
+    margin-top: 20px;
+    border-left: 1px solid #adadad;
+}
+ul>li{
+    list-style-type: none;
+}
+/*底部中间里面的ul*/
+#wh_footMiddle>div>ul{
+    display: inline-block;
+}
+#wh_footMiddle>div>ul li{
+    margin: 15px 0;
+    font-size: 14px;
+    color: #adadad;
+}
+/*所有ul里面的第一个li*/
+#wh_footMiddle>div>ul li:nth-of-type(1){
+    font-size: 17px;
+    color: #000;
+}
+/*底部中间div最后的hr*/
+#wh_footMiddle>hr{
+    margin-top: 30px;
+}
+
+/*底部中间div样式结束*/
+
+
+/*底部下方div样式开始*/
+#wh_footBottom{
+    text-align: center;
+    margin-top: 30px;
+}
+#wh_footBottom p:nth-of-type(1){
+    font-size: 10px;
+    color: rgb(153, 153, 153);
+}
+#wh_footBottom p:nth-of-type(2){
+    font-size: 10px;
+    color: rgb(0, 141, 225);
+    margin-top: 10px;
+}
+/*底部下方div样式结束*/
+

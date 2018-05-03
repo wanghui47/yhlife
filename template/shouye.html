@@ -1,0 +1,240 @@
+<div id="rh_shouye" ng-controller="shouyeCtrl">
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <a href="###">
+                    <img src="./img/rh_lunbo1.jpg" alt="">
+                </a>
+            </div>
+            <div class="swiper-slide">
+                <a href="###">
+                    <img src="./img/rh_lunbo2.jpg" alt="">
+                </a>
+            </div>
+            <div class="swiper-slide">
+                <a href="###">
+                    <img src="./img/rh_lunbo3.jpg" alt="">
+                </a>
+            </div>
+        </div>
+        <!-- 如果需要分页器 -->
+        <div class="swiper-pagination"></div>
+    </div>
+    <div class="two">
+        <div class="shops">
+            <div class="mark">
+                <span class="text1">精选</span>
+                <span class="text2">商家</span>
+                <span class="text3">&emsp;Brand selection</span>
+            </div>
+            <div class="block">
+                <a href="#shangjia/特步旗舰店" class="ad-state1">
+                    <img src="./img/rhtuceng18.png" alt="">
+                </a>
+                <ul>
+                    <li class="fl" ng-repeat="x in pingpais">
+                        <a href="#shangjia/特步旗舰店">
+                            <img ng-src="{{x}}" alt="">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="cars v">
+            <div class="marks">
+                <h1 class="fl">
+                    <img src="./img/rh4-4.png" alt="">
+                </h1>
+                <div class="right">
+                    <a href="javascript:void(0)" ng-click="clickAction(0)">爆款推荐</a>
+                    <a href="javascript:void(0)" ng-click="clickAction(1)">精品女装</a>
+                    <a href="javascript:void(0)" ng-click="clickAction(2)">精品男装</a>
+                    <div class="line">
+                        <div class="one"></div>
+                        <div class="two"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="blocks">
+                <div class="left fl">
+                    <a href="javascript:void(0)" class="ad-state1">
+                        <img src="./img/rhtuceng42.png" alt="">
+                    </a>
+                </div>
+                <div class="right fr">
+                    <ul class="baokuan">
+                        <li class="fl" ng-repeat="x in cars">
+                            <div class="img">
+                                <a href="#/shangjia/海澜之家旗舰店">
+                                    <img ng-src="{{x.src}}" alt="">
+                                </a>
+                                <a href="#/shangjia/海澜之家旗舰店" class="shade">{{x.des}}</a>
+                            </div>
+                            <p>
+                                <i class="iconfont icon-ren"></i>
+                                <span>{{x.name}}</span>
+                            </p>
+                            <p>
+                                <i class="iconfont icon-shouji"></i>
+                                <span>{{x.phone}}</span>
+                            </p>
+                            <p>
+                                <i class="iconfont icon-weizhi"></i>
+                                <span>{{x.addr}}</span>
+                            </p>
+                        </li>
+                    </ul>
+                    <!--精品女装-->
+                    <ul class="nvzuang">
+                        <li class="fl" ng-repeat="x in cargirl">
+                            <div class="img">
+                                <a href="#/shangjia/海澜之家旗舰店">
+                                    <img ng-src="{{x.src}}" alt="">
+                                </a>
+                                <a href="#/shangjia/海澜之家旗舰店" class="shade">{{x.des}}</a>
+                            </div>
+                            <p>
+                                <i class="iconfont icon-ren"></i>
+                                <span>{{x.name}}</span>
+                            </p>
+                            <p>
+                                <i class="iconfont icon-shouji"></i>
+                                <span>{{x.phone}}</span>
+                            </p>
+                            <p>
+                                <i class="iconfont icon-weizhi"></i>
+                                <span>{{x.addr}}</span>
+                            </p>
+                        </li>
+                    </ul>
+                    <!--精品男装-->
+                    <ul class="nanzuang">
+                        <li class="fl" ng-repeat="x in dress">
+                            <div class="img">
+                                <a href="#/shangjia/海澜之家旗舰店">
+                                    <img ng-src="{{x.src}}" alt="">
+                                </a>
+                                <a href="#/shangjia/海澜之家旗舰店" class="shade">{{x.des}}</a>
+                            </div>
+                            <p>
+                                <i class="iconfont icon-ren"></i>
+                                <span>{{x.name}}</span>
+                            </p>
+                            <p>
+                                <i class="iconfont icon-shouji"></i>
+                                <span>{{x.phone}}</span>
+                            </p>
+                            <p>
+                                <i class="iconfont icon-weizhi"></i>
+                                <span>{{x.addr}}</span>
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="tupian">
+            <a href="javascript:void(0)">
+                <img src="./img/rhtuceng70.png" alt="">
+            </a>
+        </div>
+        <div class="hotel v">
+            <div class="marks">
+                <h1 class="fl">
+                    <img src="./img/rhicon.png" alt="">
+                </h1>
+                <div class="right">
+                    <a href="javascript:void(0)" ng-click="clickHotel(0)">爆款推荐</a>
+                    <a href="javascript:void(0)" ng-click="clickHotel(1)">精品女装</a>
+                    <a href="javascript:void(0)" ng-click="clickHotel(2)">精品装饰</a>
+                    <div class="line">
+                        <div class="one"></div>
+                        <div class="two"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="blocks">
+                <div class="left fl">
+                    <a href="javascript:void(0)" class="ad-state1">
+                        <img src="./img/ly-jiudian.png" alt="">
+                    </a>
+                </div>
+                <div class="right fr">
+                    <ul class="baokuan">
+                        <li class="fl" ng-repeat="x in hopes">
+                            <div class="img">
+                                <a href="#/shangjia/特步旗舰店">
+                                    <img ng-src="{{x.src}}" alt="">
+                                </a>
+                                <a href="#/shangjia/特步旗舰店" class="shade">{{x.des}}</a>
+                            </div>
+                            <p>
+                                <i class="iconfont icon-ren"></i>
+                                <span>{{x.name}}</span>
+                            </p>
+                            <p>
+                                <i class="iconfont icon-shouji"></i>
+                                <span>{{x.phone}}</span>
+                            </p>
+                            <p>
+                                <i class="iconfont icon-weizhi"></i>
+                                <span>{{x.addr}}</span>
+                            </p>
+                        </li>
+                    </ul>
+                    <!--精品女装-->
+                    <ul class="nvzuang">
+                        <li class="fl" ng-repeat="x in hotelgirl">
+                            <div class="img">
+                                <a href="#/shangjia/特步旗舰店">
+                                    <img ng-src="{{x.src}}" alt="">
+                                </a>
+                                <a href="#/shangjia/特步旗舰店" class="shade">{{x.des}}</a>
+                            </div>
+                            <p>
+                                <i class="iconfont icon-ren"></i>
+                                <span>{{x.name}}</span>
+                            </p>
+                            <p>
+                                <i class="iconfont icon-shouji"></i>
+                                <span>{{x.phone}}</span>
+                            </p>
+                            <p>
+                                <i class="iconfont icon-weizhi"></i>
+                                <span>{{x.addr}}</span>
+                            </p>
+                        </li>
+                    </ul>
+                    <!--精品男装-->
+                    <ul class="nanzuang">
+                        <li class="fl" ng-repeat="x in houses">
+                            <div class="img">
+                                <a href="#/shangjia/特步旗舰店">
+                                    <img ng-src="{{x.src}}" alt="">
+                                </a>
+                                <a href="#/shangjia/特步旗舰店" class="shade">{{x.des}}</a>
+                            </div>
+                            <p>
+                                <i class="iconfont icon-ren"></i>
+                                <span>{{x.name}}</span>
+                            </p>
+                            <p>
+                                <i class="iconfont icon-shouji"></i>
+                                <span>{{x.phone}}</span>
+                            </p>
+                            <p>
+                                <i class="iconfont icon-weizhi"></i>
+                                <span>{{x.addr}}</span>
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="tupian">
+            <a href="###">
+                <img src="./img/rhtuceng70.png" alt="">
+            </a>
+        </div>
+    </div>
+</div>

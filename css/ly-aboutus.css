@@ -1,0 +1,140 @@
+#ly-about{
+    width: 1180px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style-type: none;
+}
+#ly-about>.location{
+    height: 50px;
+    color: #666666;
+    font-size: 12px;
+    line-height: 50px;
+}
+#ly-about>.location>p>span{
+    color: #ec6a17;
+}
+#ly-about .location p span:nth-child(2){
+    color: #ec6a17;
+}
+
+#ly-about .ly-about-l{
+    float: left;
+    width: 170px;
+    height: 655px;
+    background-color: white;
+    border: 1px solid #d3d3d3;
+}
+
+
+
+
+/***************************关于易和跳转***************/
+#ly-about .ly-about-r{
+    float: right;
+    width: 985px;
+    height: 1825px;
+    background-color: white;
+    border: 1px solid #d3d3d3;
+    display: block;
+}
+#ly-about .ly-zaixianxiadan{
+    float: right;
+    width: 985px;
+    height: 1825px;
+    background-color: white;
+    border: 1px solid #d3d3d3;
+    display: none;
+}
+#ly-about .ly-zhifufangshi{
+    float: right;
+    width: 985px;
+    height: 1825px;
+    background-color: white;
+    border: 1px solid #d3d3d3;
+    display: none;
+}
+#ly-about .ly-peisongfangshi{
+    float: right;
+    width: 985px;
+    height: 1825px;
+    background-color: white;
+    border: 1px solid #d3d3d3;
+    display: none;
+}
+#ly-about .ly-peisongshuoming{
+    float: right;
+    width: 985px;
+    height: 1825px;
+    background-color: white;
+    border: 1px solid #d3d3d3;
+    display: none;
+}
+
+
+
+
+
+
+
+
+#ly-about .ly-about-r .ly-about-r-top>p{
+    text-align: center;
+    font-size: 20px;
+    margin-top: 40px;
+}
+#ly-about .ly-about-r .ly-about-r-top>span:nth-child(2){
+    font-size: 14px;
+    color: #d3d3d3;
+    float: left;
+    margin-left: 340px;
+    margin-top: 20px;
+}
+#ly-about .ly-about-r .ly-about-r-top>span:nth-child(3){
+    float: right;
+    margin-right: 300px;
+    font-size: 14px;
+    color: #d3d3d3;
+    margin-top: 20px;
+}
+#ly-about .ly-about-r .ly-about-one img{
+    margin-top: 30px;
+    margin-left: 40px;
+}
+#ly-about .ly-about-l-yihe i{
+    color: #ec6a17;
+}
+#ly-about .ly-about-l-yihe i>span{
+    color: gray;
+    margin-left: 5px;
+}
+#ly-about .ly-about-l .ly-about-l-l{
+    width: 140px;
+    height: 620px;
+    /*border: 1px solid red;*/
+    margin-left: 15px;
+    margin-top: 15px;
+}
+#ly-about .ly-about-l .ly-about-l-l .ly-about-l-yihe{
+    font-size: 14px;
+    margin-top: 20px;
+}
+#ly-about .ly-about-l .ly-about-l-l .ly-about-l-yihe ul li{
+    margin-top: 10px;
+}
+#ly-about .ly-about-l .ly-about-l-l .ly-about-l-yihe ul li i{
+    color: #666666;
+    margin-left: 67px;
+}
+#ly-about .ly-about-r{
+    /*display: none;*/
+}
+
+#ly-about .ly-about-l .ly-about-l-l .ly-about-l-yihe .ly-about-i{
+    color: red;
+}
+

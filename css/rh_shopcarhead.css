@@ -1,0 +1,57 @@
+/*首页头部上方div样式开始*/
+#wh_headTop{
+    width: 100%;
+    min-width: 1180px;
+    height: 35px;
+    background-color: #eee;
+    line-height:35px;
+}
+/*上方div内容区域*/
+#wh_topContent{
+    width: 1180px;
+    height: 100%;
+    margin: 0 auto;
+}
+/*上方div内容区域里面的p标签*/
+#wh_topContent>p{
+    display: inline-block;
+}
+/*上方div内容区域里面的所有的a标签*/
+#wh_topContent>p>a{
+    padding: 0 10px;
+    border-right: 2px solid gray;
+}
+/*电话图标*/
+#wh_topContent>p>img{
+    margin-left: 10px;
+}
+/*用户名(电话号码)*/
+#wh_topContent>p>a:nth-of-type(1){
+    color: orange;
+    padding: 0;
+    border: 0;
+}
+/*联系电话的a标签*/
+#wh_topContent>p>a:nth-of-type(6){
+    padding: 0;
+    border: 0;
+}
+/*首页头部上方div样式结束*/
+
+
+#rh_shopfoot{
+    width: 100%;
+    margin-top: 30px;
+    border-top: 1px solid #d3d3d3;
+    background-color: white;
+    padding-top: 30px;
+}
+#rh_shopfoot>p{
+    font-size: 10px;
+    color: #999999;
+    text-align: center;
+}
+#rh_shopfoot>p:last-child{
+    color: #008de1;
+    margin-top: 10px;
+}

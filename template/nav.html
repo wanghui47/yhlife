@@ -1,0 +1,253 @@
+<!--头部开始-->
+<div id="wh_head">
+    <!--头部上方div开始-->
+    <div id="wh_headTop">
+        <!--上方内容开始-->
+        <div id="wh_topContent">
+            <span>所在城市</span>
+            <select name="">
+                <option value="北京">北京</option>
+                <option value="上海">上海</option>
+                <option value="广州">广州</option>
+                <option value="河南">河南</option>
+                <option value="湖北">湖北</option>
+                <option value="湖南">湖南</option>
+                <option value="河北">河北</option>
+                <option value="深圳">深圳</option>
+                <option value="郑州">郑州</option>
+                <option value="驻马店">驻马店</option>
+                <option value="漯河">漯河</option>
+                <option value="许昌">许昌</option>
+                <option value="焦作">焦作</option>
+            </select>
+            <p class="fr">
+                <span>您好,</span>
+                <a href="javascript:void(0)">{{userphone}}</a>
+                <a href="./denglu.html">退出</a>
+                <a href="javascript:void(0)">我的订单</a>
+                <a href="javascript:void(0)">我的消息</a>
+                <a href="javascript:void(0)">我是商家</a>
+                <img src="img/whhome_phone.png" alt="">
+                <a href="javascript:void(0)">400-800-8820</a>
+            </p>
+        </div>
+        <!--上方内容结束-->
+    </div>
+    <!--头部上方div结束-->
+
+    <!--头部中间div开始-->
+    <div id="wh_headMiddle">
+        <!--中间内容开始-->
+        <div id="wh_middleContent">
+            <img src="img/whhome_logo.png" alt="易和生活港logo">
+            <ul>
+                <li>
+                    <span>商家</span>
+                    <span>商品</span>
+                </li>
+                <li>
+                    <!--商家input输入框(默认显示)-->
+                    <input type="text" placeholder="请输入商家名称或关键字" ng-keyup="entersearch($event)" ng-model="ddd">
+                    <!--商品input输入框(默认隐藏)-->
+                    <input type="text" placeholder="请输入商品名称或关键字" ng-keyup="entersearch($event)" ng-model="ddd">
+                    <!--搜索图标-->
+                    <a href="javascript:void(0)" ng-click="clickme()">
+                        <img src="img/whhome_search.png" alt="">
+                    </a>
+
+                    <a href="#/person">
+                        <img src="img/whhome_person.png" alt="" class="wh_headImg">
+                        <span>我的易和&gt;</span>
+                    </a>
+
+
+                    <a href="javascript:void(0)" ng-click="ren_goshopcar()">
+                        <img src="img/whhome_shopcar.png" alt="" class="wh_headImg">
+                        <span>购物车&gt;</span>
+                    </a>
+
+
+                </li>
+                <li>
+                    <span>热门:</span>
+                    <a href="">酒店</a>
+                    <a href="">洗车</a>
+                    <a href="">餐饮</a>
+                    <a href="">进口</a>
+                    <a href="">旅游</a>
+                    <a href="">如家</a>
+                </li>
+            </ul>
+        </div>
+        <!--中间内容结束-->
+    </div>
+    <!--头部中间div结束-->
+
+    <!--头部下方div开始-->
+    <div id="wh_headBottom">
+        <!--下方内容开始-->
+        <div id="wh_bottomContent">
+            <!--行业分类-->
+            <div id="wh_workClass">
+                <span>行业分类</span>
+                <!--上箭头(默认显示)-->
+                <i class="iconfont icon-icon-shang"></i>
+                <!--下箭头(默认隐藏)-->
+                <i class="iconfont icon-icon"></i>
+                <!--行业分类详情-->
+                <div>
+                    <ul>
+                        <li index="1">第一个</li>
+                        <li index="2">第二个</li>
+                        <li index="3">第三个</li>
+                        <li index="4">第四个</li>
+                    </ul>
+                    <ul class="wh_yincangUl">
+                        <li>111.哈哈哈</li>
+                        <li>2.嘿嘿嘿</li>
+                        <li>3.呵呵呵</li>
+                    </ul>
+                    <ul class="wh_yincangUl">
+                        <li>1.哈哈哈</li>
+                        <li>2222.嘿嘿嘿</li>
+                        <li>3.呵呵呵</li>
+                    </ul>
+                    <ul class="wh_yincangUl">
+                        <li>1.哈哈哈</li>
+                        <li>2.嘿嘿嘿</li>
+                        <li>3333.呵呵呵</li>
+                    </ul>
+                    <ul class="wh_yincangUl">
+                        <li>444.对方打死发导航</li>
+                    </ul>
+                </div>
+            </div>
+
+            <a href="#/shouye">首页</a>
+            <a href="#/jingxuan">精选品牌</a>
+            <a href="#/tejia">今日特价</a>
+            <a href="#/shangcheng">积分商城</a>
+            <a href="#/join">加入易和</a>
+            <div id="wh_online">
+                <a href="javascript:void(0)" class="fr">在线客服</a>
+                <div id="wh_onlineHidden">
+                    <button>
+                        <i class="iconfont icon-qq"></i>
+                        <span>QQ客服1</span>
+                    </button>
+                    <button>
+                        <i class="iconfont icon-qq"></i>
+                        <span>QQ客服2</span>
+                    </button>
+                    <button>
+                        <i class="iconfont icon-qq"></i>
+                        <span>QQ客服3</span>
+                    </button>
+                    <img src="img/wh_onlineCode.png" alt="">
+                </div>
+            </div>
+
+
+        </div>
+        <!--下方内容结束-->
+    </div>
+    <!--头部下方div结束-->
+</div>
+<!--头部结束-->
+
+<script>
+    var spans = $("#wh_middleContent>ul>li:nth-of-type(1) span");
+    var inputs = $("#wh_middleContent>ul>li:nth-of-type(2) input");
+    var abqs = $("#wh_bottomContent a");
+
+    //点击商家span
+    $(spans[0]).click(function () {
+        $(spans[0]).css("backgroundColor", "rgb(0, 141, 225)");
+        $(spans[1]).css("backgroundColor", "white");
+        $(inputs[0]).css("display", "inline");
+        $(inputs[1]).css("display", "none");
+    });
+    //点击商品span
+    $(spans[1]).click(function () {
+        $(spans[1]).css("backgroundColor", "rgb(0, 141, 225)");
+        $(spans[0]).css("backgroundColor", "white");
+        $(inputs[1]).css("display", "inline");
+        $(inputs[0]).css("display", "none");
+    });
+
+    //点击首页里面的a标签改变颜色
+    for (var i = 0; i < abqs.length - 1; i++) {
+        $(abqs[i]).click(function () {
+            for (var i = 0; i < abqs.length; i++) {
+                $(abqs[i]).css("color", "black");
+            }
+            $(this).css("color", "orange");
+        });
+    }
+
+
+    //行业分类的鼠标移入
+    $("#wh_workClass").mouseover(function () {
+        $("#wh_workClass i:nth-of-type(1)").css("display", "inline-block");
+        $("#wh_workClass i:nth-of-type(2)").css("display", "none");
+        $("#wh_workClass>div").css("display", "block");
+        $("#wh_workClass>div").css("zIndex", "10");
+    });
+
+    //行业分类的鼠标移出
+    $("#wh_workClass").mouseout(function () {
+        $("#wh_workClass i:nth-of-type(2)").css("display", "inline-block");
+        $("#wh_workClass i:nth-of-type(1)").css("display", "none");
+        $("#wh_workClass>div").css("display", "none");
+    });
+
+    //行业分类下面的li的鼠标移入移出
+    var lis = $("#wh_workClass>div>ul:nth-of-type(1) li");
+
+    var uls = $("#wh_workClass>div>ul");
+    for (var i = 0; i < lis.length; i++) {
+        $(lis[i]).mouseover(function () {
+            for (var j = 1; j < uls.length; j++) {
+                $(uls[j]).css("display", "none");
+            }
+            var flag = $(this).attr("index");
+            $(uls[flag]).css("display", "block");
+
+            for (var k = 0; k < lis.length; k++) {
+                $(lis[k]).css("backgroundColor", "rgba(0, 0, 0, 0.8)");
+            }
+            $(this).css("backgroundColor", "orange");
+
+        });
+    }
+
+
+
+
+
+    //在线客服文字的鼠标移入效果
+    var online = $("#wh_bottomContent>#wh_online");
+    $(online).mouseover(function () {
+        $("#wh_bottomContent #wh_onlineHidden").css("display", "block");
+        $("#wh_bottomContent>#wh_online>a").css("color", "orange");
+    });
+    //在线客服文字的鼠标移出效果
+    $(online).mouseout(function () {
+        $("#wh_bottomContent #wh_onlineHidden").css("display", "none");
+        $("#wh_bottomContent>#wh_online>a").css("color", "black");
+    });
+</script>
+
+
+<script>
+//    var inputs = $("#wh_middleContent>ul>li:nth-of-type(2)>input");
+//    console.log(inputs);
+
+//    function changeword(){
+//        if(){
+//
+//        }
+//    }
+
+
+</script>

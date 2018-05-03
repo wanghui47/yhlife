@@ -1,0 +1,144 @@
+#wh_foot{
+    width: 100%;
+    min-width: 1180px;
+    background-color: #fff;
+    margin-top: 20px;
+}
+
+
+
+/*底部上方div样式开始*/
+/*上方外部包裹div*/
+#wh_footTop{
+    width: 100%;
+    height: 85px;
+    background-color: rgb(226, 226, 226);
+}
+/*上方div内部的content*/
+#wh_footTopContent{
+    width: 1180px;
+    height: 85px;
+    margin: 0 auto;
+    position: relative;
+}
+#wh_footTopContent img{
+    position: absolute;
+    top: 20px;
+}
+#wh_footTopContent img:nth-of-type(1){
+    left: 20px;
+}
+#wh_footTopContent img:nth-of-type(2){
+    left: 260px;
+}
+#wh_footTopContent img:nth-of-type(3){
+    left: 500px;
+}
+#wh_footTopContent img:nth-of-type(4){
+    left: 750px;
+}
+#wh_footTopContent img:nth-of-type(5){
+    right: 130px;
+}
+
+
+#wh_footTopContent span{
+    line-height: 85px;
+    font-size: 25px;
+}
+#wh_footTopContent span:nth-of-type(1){
+    margin-left: 80px;
+}
+#wh_footTopContent span:nth-of-type(2){
+    margin-left: 130px;
+}
+#wh_footTopContent span:nth-of-type(3){
+    margin-left: 130px;
+}
+#wh_footTopContent span:nth-of-type(4){
+    margin-left: 140px;
+}
+#wh_footTopContent span:nth-of-type(5){
+    margin-left: 160px;
+}
+
+#wh_footTopContent span{
+    display: inline-block;
+}
+/*底部上方div样式结束*/
+
+
+/*底部中间div样式开始*/
+#wh_footMiddle{
+    width: 1180px;
+    height: 260px;
+    margin: 0 auto;
+}
+/*易和logo*/
+#wh_footMiddle>img{
+    width: 230px;
+    height: 130px;
+    margin-top: 50px;
+    margin-right: 50px;
+}
+/*底部中间里面的p*/
+#wh_footMiddle>p{
+    display: inline-block;
+    text-align: center;
+    margin-top: 45px;
+    margin-left: 30px;
+}
+/*包含二维码的所有的p*/
+#wh_footMiddle>p>img{
+    width: 135px;
+}
+#wh_footMiddle>p:nth-of-type(2){
+    margin-right: 20px;
+}
+/*第二个二维码的p*/
+#wh_footMiddle>p:nth-of-type(2) img{
+    padding-right: 30px;
+    border-right: 1px solid rgb(211, 211, 211);
+}
+#wh_footMiddle>p:nth-of-type(2)>span{
+    margin-right: 30px;
+}
+#wh_footMiddle>div{
+    margin-top: 42px;
+}
+/*底部中间里面的ul*/
+#wh_footMiddle>div>ul{
+    display: inline-block;
+    margin: 0 20px;
+}
+#wh_footMiddle>div>ul li{
+    margin: 10px 0;
+}
+/*所有ul里面的第一个li*/
+#wh_footMiddle>div>ul li:nth-of-type(1){
+    font-size: 18px;
+    color: #000;
+}
+/*底部中间div最后的hr*/
+#wh_footMiddle>hr{
+    margin-top: 30px;
+}
+
+/*底部中间div样式结束*/
+
+
+/*底部下方div样式开始*/
+#wh_footBottom{
+    text-align: center;
+    margin-top: 30px;
+}
+#wh_footBottom p:nth-of-type(1){
+    font-size: 10px;
+    color: rgb(153, 153, 153);
+}
+#wh_footBottom p:nth-of-type(2){
+    font-size: 10px;
+    color: rgb(0, 141, 225);
+    margin-top: 10px;
+}
+/*底部下方div样式结束*/

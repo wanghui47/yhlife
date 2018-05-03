@@ -1,0 +1,28 @@
+<div id="rh_shop">
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><a href="javascript:void(0)"><img src="./img/rh_lunbo2.jpg" alt=""></a></div>
+            <div class="swiper-slide"><a href="javascript:void(0)"><img src="./img/rh_lunbo1.jpg" alt=""></a></div>
+            <div class="swiper-slide"><a href="javascript:void(0)"><img src="./img/rh_lunbo3.jpg" alt=""></a></div>
+        </div>
+        <!-- 如果需要分页器 -->
+        <div class="swiper-pagination"></div>
+    </div>
+    <div class="one">
+        <ul>
+            <li ng-repeat="x in nanshangyi">
+                <a href="javascript:void(0)"><img ng-src="{{x.src}}"/></a>
+                <p class="desc">{{x.des}}</p>
+                <p class="info">
+                    <span>积分：</span>
+                    <span class="jifen">{{x.jifen}}</span>
+                    <span class="jiazhi">价值</span>
+                    <span class="price">{{x.price}}</span>
+                </p>
+                <div class="jifenduihuan">
+                    <a href="javascript:void(0)" class="duihuan">兑换</a>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>

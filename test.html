@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Test</title>
+    <script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+</head>
+
+<body>
+    <button id="clickme">点我</button>
+</body>
+
+</html>
+<script>
+    $("#clickme").click(function() {
+        $.ajax({
+            type: "get",
+            dataType: "jsonp",
+            url: "http://101.132.96.6/albb.php",
+            async: true,
+            jsonp: "cb",
+            jsonpCallback: "success"
+        });
+    });
+
+    function success(data) {
+        console.log(data);
+    }
+</script>

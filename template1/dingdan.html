@@ -1,0 +1,74 @@
+<div id="rh_dingdan">
+    <div class="rh-content">
+        <div class="one">
+            <img src="img/whhome_logo.png" alt="易和生活港logo">
+            <ul class="rh-content-my">
+                <li>我的购物车</li>
+                <li>确认订单信息</li>
+                <li>订单提交成功</li>
+            </ul>
+        </div>
+        <div class="two">
+            <p class="left fl">收件人信息</p>
+            <a href="javascript:void(0)" class="fr">使用新地址</a>
+        </div>
+        <ul class="three">
+            <li ng-repeat="x in address">
+                <input type="radio" name="addr"ng-click="xuanzhong($index)" class="{{'ren'+$index}}">
+                <p class="fl name">{{x.name}}</p>
+                <p class="fl address">{{x.address}}{{x.street}}</p>
+                <p class="fl phone">手机:{{x.contact}}</p>
+                <p class="fl morendizhi">默认地址</p>
+                <p class="fr update"><a href="javascript:void(0)">修改</a></p>
+                <p class="fr shezhimorendizhi"><a href="javascript:void(0)" ng-click="shezhimorendizhi($index)">设置默认地址</a></p>
+            </li>
+        </ul>
+        <p class="shopinfo">商品信息</p>
+        <!--一个商家模板-->
+        <div class="four" ng-repeat="y in dingdancar">
+            <div class="table same">
+                <div>{{y._id}}</div>
+                <div>规格</div>
+                <div>单价</div>
+                <div>数量</div>
+                <div>金额</div>
+            </div>
+            <!--一个商品模板-->
+            <ul class="item">
+                <li class="same" ng-repeat="x in y.arr">
+                    <div class="name">
+                        <img src="img/ly-meinv.png" alt="">
+                        <span>{{x.name}}</span>
+                    </div>
+                    <div class="type">
+                        <p>尺寸:{{x.size}}</p>
+                        <p>颜色:{{x.color}}</p>
+                    </div>
+                    <div class="price">{{x.price}}</div>
+                    <div class="count">{{x.count}}</div>
+                    <div class="totalprice">{{totalprice(x)}}</div>
+                </li>
+            </ul>
+            <div class="totalprice">
+                <div>
+                    <p>商品金额</p>
+                    <p class="ren_dingdan">{{totalPrice(y)}}</p>
+                </div>
+            </div>
+        </div>
+        <div class="five">
+            <p>合计: <span class="color">¥{{gettotalmoney()}}</span></p>
+            <p>
+                <span>使用积分抵扣(您有{{havejifen}}积分)</span>
+                <input type="text"ng-model="jifen" ng-change="change()">
+                <span class="color">-¥{{jifen/100}}</span>
+            </p>
+
+        </div>
+        <div class="six">
+            <p>应付金额:<span class="color">¥{{paymoney()}}</span></p>
+            <p>订单完成后可以获得积分:<span class="color">{{getjifen()}}</span></p>
+        </div>
+        <div class="tijiao"><a href="javascript:void(0)" ng-click="submit()">提交订单</a></div>
+    </div>
+</div>

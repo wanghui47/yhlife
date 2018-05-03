@@ -1,0 +1,239 @@
+#rh_shouye{
+    width: 100%;
+    background-color: #f2f2f2;
+}
+#rh_shouye .swiper-container {
+    width: 100%;
+    height: 470px;
+}
+
+#rh_shouye .swiper-slide img{
+    width: 100%;
+    height: 100%;
+}
+
+#rh_shouye>.two{
+    width: 1180px;
+    margin: 0 auto;
+}
+/*精品商家开始*/
+#rh_shouye>.two>.shops>.mark{
+    border-bottom: 3px solid #018DE2;
+    padding: 30px 0 10px;
+    overflow: hidden;
+}
+#rh_shouye>.two>.shops>.mark>span{
+    float: left;
+    font-size: 30px;
+    line-height: 30px;
+}
+#rh_shouye>.two>.shops>.mark>.text1{
+    color: #FE6E00;
+}
+#rh_shouye>.two>.shops>.mark>.text2{
+    color: #008CE1;
+}
+#rh_shouye>.two>.shops>.mark>.text3{
+    color: #666;
+    font-size: 16px;
+    line-height: 40px;
+}
+#rh_shouye>.two>.shops>.block{
+    background: #fff;
+    border: 1px solid #D4D4D4;
+    border-top: 0;
+    padding: 10px;
+    margin: 0 0 10px 0;
+    overflow: hidden;
+}
+#rh_shouye>.two>.shops>.block>.ad-state1{
+    float: left;
+    width: 316px;
+    height: 349px;
+}
+#rh_shouye>.two>.shops>.block>.ad-state1>img{
+    width: 100%;
+}
+#rh_shouye>.two>.shops>.block>ul{
+    margin: 0 0 0 325px;
+    border: 1px solid #e4e4e4;
+    height: 348px;
+    overflow: hidden;
+    border-right: 0;
+    border-bottom: 0;
+}
+#rh_shouye>.two>.shops>.block>ul>li{
+    width: 207px;
+    height: 115px;
+    border-right: 1px solid #e4e4e4;
+    border-bottom: 1px solid #e4e4e4;
+    position: relative;
+}
+#rh_shouye>.two>.shops>.block>ul>li>a>img{
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+/*精品商家结束*/
+
+
+/*汽车装饰开始*/
+#rh_shouye>.two .marks{
+    border-bottom: 3px solid #018DE2;
+    padding: 30px 0 10px;
+    height: 45px;
+}
+#rh_shouye>.two .marks>.right {
+    margin-left: 335px;
+    position: relative;
+    height: 45px;
+}
+#rh_shouye>.two .marks>.right>a {
+    color: #3f4040;
+    font-size: 16px;
+    display: inline-block;
+    width: 100px;
+    line-height: 45px;
+    text-align: center;
+    float: left;
+}
+#rh_shouye>.two .marks>.right>.line{
+    position: absolute;
+    bottom: -13px;
+    left: 0px;
+    text-align: center;
+    transition: all 0.2s ;
+}
+#rh_shouye>.two .marks>.right>.line>.one{
+    width: 0;
+    height: 0;
+    margin: 0 auto;
+    border-color: transparent transparent  #ff6c00 transparent ;
+    border-style: solid;
+    border-width: 0 4px 5px 4px ;
+}
+
+#rh_shouye>.two .marks>.right>.line>.two{
+    width: 100px;
+    height: 3px;
+    background-color: #ff6c00;
+}
+#rh_shouye>.two .blocks{
+    background: #fff;
+    border: 1px solid #D4D4D4;
+    border-top: 0;
+    margin: 0 0 10px 0;
+    overflow: hidden;
+    padding: 10px;
+}
+#rh_shouye>.two .blocks>.left{
+    width: 315px;
+    height: 510px;
+}
+#rh_shouye>.two .blocks>.left>a>img{
+    width: 315px;
+    height: 510px;
+
+}
+#rh_shouye>.two .blocks>.right{
+    width: 843px;
+    height: 510px;
+}
+#rh_shouye>.two .blocks>.right>ul>li{
+    width: 271px;
+    height: 255px;
+    margin-left: 10px;
+}
+#rh_shouye>.two .blocks>.right>ul>li>.img{
+    width: 271px;
+    height: 150px;
+    position: relative;
+}
+#rh_shouye>.two .blocks>.right>ul>li>.img>a>img{
+    width: 271px;
+    height: 150px;
+}
+#rh_shouye>.two .blocks>.right>ul>li>.img>.shade{
+    display: inline-block;
+    width: 271px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 16px;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    color: white;
+    background-color: rgba(0,0,0 ,0.5);
+}
+#rh_shouye>.two .blocks>.right>ul>li>p{
+    margin-top: 8px;
+}
+#rh_shouye>.two .blocks>.right>ul>li>p>i{
+    color: #ff6c00;
+}
+#rh_shouye>.two .blocks>.right>ul>li:hover{
+    background-color: #f2f2f2;
+}
+/*爆款推荐*/
+#rh_shouye>.two .blocks>.right>.baokuan{
+    display: block;
+}
+/*精品女装*/
+#rh_shouye>.two .blocks>.right>.nvzuang{
+    display: none;
+}
+/*精品男装*/
+#rh_shouye>.two .blocks>.right>.nanzuang{
+    display: none;
+}
+
+
+#rh_shouye>.two .blocks>.right>.ulnone{
+    display: none;
+}
+#rh_shouye>.two .blocks>.right>.ulblock{
+    display: block;
+}
+/*汽车装饰结束*/
+
+
+/*图片开始*/
+#rh_shouye>.two>.tupian{
+    width: 1180px;
+    height: 120px;
+}
+#rh_shouye>.two>.tupian>a>img{
+    width: 1180px;
+    height: 120px;
+    vertical-align: top;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

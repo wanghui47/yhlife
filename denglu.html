@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/ly-denglu.css">
+    <link rel="stylesheet" href="//at.alicdn.com/t/font_418113_4ncnmd9xlepfd2t9.css">
+</head>
+
+<body>
+    <div id="ly-denglu">
+        <div class="ly-logo">
+            <div class="top">
+                <span>所在城市:</span>
+                <select name="">
+                <option value="北京">北京</option>
+            </select>
+                <div class="ly-logo-r">
+                    <span>我是商家</span>
+                    <img src="img/ly-1-5.png" alt="">
+                    <span>400-800-8820</span>
+                </div>
+            </div>
+            <div class="ly-content-one">
+                <img src="img/ly-download.png" alt="">
+                <span class="ly-content-one-huiyuan">会员登录</span>
+            </div>
+        </div>
+
+        <div class="ly-logo-one">
+            <div class="ly-0">
+                <div class="ly-1">
+                    <div class="ly-label">登录</div>
+                    <a href="javascript:void(0)" class="ly-explain">账号密码登录<i class="iconfont icon-ren"></i></a>
+
+                    <div>
+                        <input class="ly-iphon" type="text" placeholder="请输入手机号">
+                    </div>
+                    <div>
+                        <input class="ly-mima" type="password" placeholder="请输入密码">
+                    </div>
+
+
+                    <div class="ly-border">
+                        <div>
+                            <input class="ly-phone-yanzheng" type="text" placeholder="手机验证码">
+                            <input type="button" id="my_button" class="ly-huoquyzm" value="获取验证码">
+                        </div>
+                    </div>
+
+                    <div class="ly-zidongdenglu">
+                        <input type="checkbox">
+                        <span>自动登录</span>
+                        <a href="javascript:void(0)">忘记密码?</a>
+                    </div>
+
+                    <div class="ly-denglu-zhuce">
+                        <input type="button" value="登录" id="ren_login">
+                        <input type="button" value="注册" id="ren_register">
+                    </div>
+
+                    <div class="ly-zhushi">
+                        <div class="ly-youxian"></div>
+                        <span class="ly-hezuo">用合作网站登录</span>
+                        <div class="ly-zuoxian"></div>
+                    </div>
+                    <div class="ly-weixin-qq">
+                        <i class="iconfont icon-weixin"></i>
+                        <i class="iconfont icon-qq1"></i>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!--尾部开始-->
+    <div id="wh_foot">
+        <!--底部上方div开始-->
+        <div id="wh_footTop">
+            <div id="wh_footTopContent">
+                <img src="img/wh_foot1.png" alt="">
+                <span>正品保障</span>
+
+                <img src="img/wh_foot2.png" alt="">
+                <span>全程追踪</span>
+
+                <img src="img/wh_foot3.png" alt="">
+                <span>客户监督</span>
+
+                <img src="img/wh_foot4.png" alt="">
+                <span>售后无忧</span>
+
+                <img src="img/wh_foot5.png" alt="">
+                <span>准时送达</span>
+            </div>
+        </div>
+        <!--底部上方div结束-->
+
+        <!--底部中间div开始-->
+        <div id="wh_footMiddle">
+            <img src="img/whhome_logo.png" alt="" class="fl">
+            <p>
+                <img src="img/wh_footerCode.jpg" alt="">
+                <br>
+                <i class="iconfont icon-icon1460188541813"></i>
+                <span>官方微信</span>
+            </p>
+            <p>
+                <img src="img/wh_footerCode.jpg" alt="">
+                <br>
+                <span>
+                <i class="iconfont icon-mobile"></i>
+                <span>APP下载</span>
+                </span>
+            </p>
+
+            <div class="fr">
+                <ul>
+                    <li>关于易和</li>
+                    <li>新用户注册</li>
+                    <li>在线下单</li>
+                    <li>支付方式</li>
+                </ul>
+                <ul>
+                    <li>配送说明</li>
+                    <li>运费说明</li>
+                    <li>配送方式</li>
+                    <li>发票说明</li>
+                </ul>
+                <ul>
+                    <li>售后服务</li>
+                    <li>退换货规则</li>
+                    <li>服务保障承诺</li>
+                    <li>验货与签收</li>
+                </ul>
+                <ul>
+                    <li>加盟易和</li>
+                    <li>加盟条款</li>
+                    <li>公司简介</li>
+                    <li>服务协议</li>
+                </ul>
+            </div>
+
+            <hr>
+        </div>
+        <!--底部中间div结束-->
+
+        <!--底部下方div开始-->
+        <div id="wh_footBottom">
+            <p>版权所有 © 2016易和生活港 保留所有权利 | 沪ICP备：12042163</p>
+            <p>易和生活 众享品质</p>
+        </div>
+        <!--底部下方div结束-->
+    </div>
+    <!--尾部结束-->
+</body>
+
+</html>
+<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+<script>
+    var phonenumber;
+    $("#ren_register").click(function() {
+        window.location.href = "zhuce.html";
+    })
+    $("#ren_login").click(function() {
+        $.ajax({
+            type: "get",
+            dataType: "jsonp",
+            url: "http://101.132.96.6/yhlife/server/login.php?phonenumber=" + $("input").eq(0).val() + "&password=" + $("input").eq(1).val(),
+            async: true,
+            jsonp: "cb",
+            jsonpCallback: "success"
+
+        })
+    })
+
+    function success(data) {
+        phonenumber = $("input").eq(0).val();
+        if (data.flag) {
+            if (data.password) {
+                $("input").eq(0).val("")
+                $("input").eq(1).val("")
+                location.href = "index.html?phonenumber=" + phonenumber;
+            } else {
+                alert("密码错误,请重新输入!!!");
+            }
+        } else {
+            alert("该手机号不存在,请先注册!!!");
+        }
+
+        function success(data) {
+            console.log(data)
+        }
+    }
+</script>

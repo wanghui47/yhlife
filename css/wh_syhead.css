@@ -1,0 +1,282 @@
+/*首页头部上方div样式开始*/
+body{
+    margin: 0;
+    padding: 0;
+}
+#wh_headTop{
+    width: 100%;
+    min-width: 1180px;
+    height: 35px;
+    background-color: #eee;
+    line-height:35px;
+}
+/*上方div内容区域*/
+#wh_topContent{
+    width: 1180px;
+    height: 100%;
+    margin: 0 auto;
+}
+/*上方div内容区域里面的p标签*/
+#wh_topContent>p{
+    display: inline-block;
+}
+/*上方div内容区域里面的所有的a标签*/
+#wh_topContent>p>a{
+    padding: 0 10px;
+    border-right: 2px solid gray;
+}
+/*电话图标*/
+#wh_topContent>p>img{
+    margin-left: 10px;
+}
+/*用户名(电话号码)*/
+#wh_topContent>p>a:nth-of-type(1){
+    color: orange;
+    padding: 0;
+    border: 0;
+}
+/*联系电话的a标签*/
+#wh_topContent>p>a:nth-of-type(6){
+    padding: 0;
+    border: 0;
+}
+/*首页头部上方div样式结束*/
+
+
+
+
+/*首页头部中间div样式开始*/
+#wh_headMiddle{
+    width: 100%;
+    min-width: 1180px;
+    height: 130px;
+    background-color: white;
+}
+#wh_middleContent{
+    width: 1180px;
+    height: 100%;
+    margin: 0 auto;
+}
+/*logo*/
+#wh_middleContent>img{
+    margin-top: 25px;
+}
+#wh_middleContent>ul{
+    width: 500px;
+    height: 60px;
+    display: inline-block;
+    margin-left: 150px;
+}
+#wh_middleContent>ul li{
+    margin: 0;
+    padding: 0;
+}
+/*ul里的第一排*/
+#wh_middleContent>ul li:nth-of-type(1){
+    width: 500px;
+    height: 25px;
+    line-height: 25px;
+}
+/*商家文字的样式*/
+#wh_middleContent>ul li:nth-of-type(1) span:nth-of-type(1){
+    display: inline-block;
+    width: 50px;
+    height: 25px;
+    background-color: rgb(0, 141, 225);
+    text-align: center;
+}
+/*商品文字的样式*/
+#wh_middleContent>ul li:nth-of-type(1) span:nth-of-type(2){
+    display: inline-block;
+    width: 50px;
+    height: 25px;
+    text-align: center;
+}
+
+
+/*li里的第二排input*/
+#wh_middleContent>ul li:nth-of-type(2){
+    width: 880px;
+    height: 30px;
+    line-height: 30px;
+}
+/*li里的第三排a标签*/
+#wh_middleContent>ul li:nth-of-type(3){
+    width: 500px;
+    height: 30px;
+    line-height: 30px;
+}
+/*商家和商品搜索框*/
+#wh_middleContent>ul li input{
+    width: 450px;
+    height: 30px;
+    vertical-align: bottom;
+    border: 2px solid #008cdd;
+    display: inline;
+}
+/*商品搜索框(默认隐藏)*/
+#wh_middleContent>ul li:nth-of-type(2) input:nth-of-type(2){
+    display: none;
+}
+/*商品搜索图标*/
+#wh_middleContent>ul li:nth-of-type(2)>a:nth-of-type(1)>img{
+    vertical-align: bottom;
+    height: 34px;
+    margin-left: -6px;
+    margin-right: 20px;
+}
+/*我的易和 和 购物车*/
+#wh_middleContent>ul li:nth-of-type(2) a:nth-of-type(2),#wh_middleContent>ul li:nth-of-type(2) a:nth-of-type(3){
+    display: inline-block;
+    width: 120px;
+    height: 32px;
+    background-color: rgb(249, 249, 249);
+    border: 1px solid rgb(211, 211, 211);
+    outline: 0;
+    margin: 0 10px;
+}
+.wh_headImg{
+    width: 20px;
+    height: 20px;
+    margin-top: 4px;
+    vertical-align: top;
+}
+/*第三个li中的热门文字*/
+#wh_middleContent span{
+    font-size: 18px;
+    vertical-align: top;
+}
+/*第三个li里面的所有的a标签*/
+#wh_middleContent>ul li:nth-of-type(3) a{
+    font-size: 12px;
+}
+#wh_middleContent>ul li:nth-of-type(3) a:hover{
+    color: red;
+}
+
+
+/*首页头部中间div样式结束*/
+
+
+
+/*首页头部下方div样式开始*/
+#wh_headBottom{
+    width: 100%;
+    min-width: 1180px;
+    height: 45px;
+    background-color: white;
+    line-height: 45px;
+    border-bottom: 2px solid rgb(0, 141, 225);
+}
+#wh_bottomContent{
+    width: 1180px;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+/*行业分类*/
+#wh_workClass{
+    display: inline-block;
+    width: 175px;
+    height: 100%;
+    background-color: rgb(0, 141, 225);
+    margin-right: 40px;
+    text-align: center;
+    position: relative;
+}
+/*行业分类里面的上箭头(默认隐藏)*/
+#wh_workClass i:nth-of-type(1){
+    display: none;
+    margin-left: 20px;
+}
+/*行业分类里面的下箭头(默认显示)*/
+#wh_workClass i:nth-of-type(2){
+    margin-left: 20px;
+}
+/*行业分类文字*/
+#wh_workClass span{
+    color: #fff;
+    font-size: 20px;
+}
+
+
+/*bottomContent下面的所有的a标签*/
+#wh_bottomContent a{
+    margin: 0 40px;
+}
+/*首页a标签默认颜色就是橘黄色*/
+#wh_bottomContent a:nth-of-type(1){
+    color: orange;
+    margin-left: 80px;
+}
+/*bottomContent下面的所有的a标签中的在线客服*/
+#wh_bottomContent a:nth-of-type(6){
+    margin: 0;
+}
+
+/*行业分类详情*/
+#wh_workClass>div{
+    display: none;
+    width: 175px;
+    height: 470px;
+    position: absolute;
+    background-color: rgb(0, 141, 225);
+}
+
+
+/*所有ul里面的li*/
+#wh_workClass>div ul li{
+    color: #fff;
+}
+#wh_workClass>div>ul:nth-of-type(1) li{
+    width: 100%;
+    height: 50px;
+    border-bottom: 1px solid white;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/*右侧隐藏的ul*/
+.wh_yincangUl{
+    display: none;
+    position: absolute;
+    width: 400px;
+    height: 470px;
+    top: 0;
+    left: 175px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+
+/*在线客服div的样式*/
+#wh_bottomContent>#wh_online{
+    display: inline;
+}
+
+/*在线客服下方隐藏的div的样式*/
+#wh_bottomContent #wh_onlineHidden{
+    display: none;
+    position: absolute;
+    width: 150px;
+    text-align: center;
+    background-color: cyan;
+    top: 45px;
+    left: 1035px;
+    z-index: 10;
+}
+
+/*QQ客服button*/
+#wh_bottomContent #wh_onlineHidden button{
+    width: 125px;
+    height: 30px;
+    font-size: 18px;
+    background-color: orange;
+    border: 0;
+    outline: 0;
+    border-radius: 5px;
+}
+
+/*onlineCode(在线客服二维码的样式)*/
+#wh_bottomContent #wh_onlineHidden>img{
+    width: 124px;
+}
+/*首页头部下方div样式结束*/

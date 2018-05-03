@@ -1,0 +1,80 @@
+#ly-paysuccess {
+  width: 1180px;
+  height: 635px;
+  border: 1px solid #adadad;
+  margin: 0 auto;
+  margin-top: 25px;
+}
+#ly-paysuccess > .ly-content {
+  width: 1118px;
+  /*border: 1px solid #adadad;*/
+  margin: 20px auto 0;
+  padding: 30px;
+  overflow: hidden;
+}
+#ly-paysuccess > .ly-content > .one {
+  width: 1118px;
+  overflow: hidden;
+  padding-bottom: 40px;
+  border-bottom: 1px solid #d3d3d3;
+}
+#ly-paysuccess > .ly-content > .one > img {
+  width: 140px;
+}
+#ly-paysuccess > .ly-content > .one > .ly-content-my {
+  width: 730px;
+  height: 40px;
+  float: right;
+  margin-top: 45px;
+}
+#ly-paysuccess > .ly-content > .one > .ly-content-my > li {
+  height: 40px;
+  float: left;
+  background-size: 100% 100%;
+  text-align: center;
+  line-height: 40px;
+}
+#ly-paysuccess > .ly-content > .one > .ly-content-my > li:nth-child(1) {
+  width: 236px;
+  background: url('../img/rhjuxing1.png') no-repeat;
+}
+#ly-paysuccess > .ly-content > .one > .ly-content-my > li:nth-child(2) {
+  width: 247px;
+  background: url('../img/ly-juxing1.png') no-repeat;
+}
+#ly-paysuccess > .ly-content > .one > .ly-content-my > li:nth-child(3) {
+  width: 247px;
+  background: url('../img/ly-orange.jpg') no-repeat;
+}
+#ly-paysuccess .ly-duihao {
+  margin-top: 80px;
+}
+#ly-paysuccess .ly-duihao i {
+  color: #ec6a17;
+  font-size: 70px;
+  margin-left: 550px;
+}
+#ly-paysuccess .ly-chenggong {
+  font-size: 35px;
+  margin-left: 515px;
+  margin-top: 35px;
+  color: gray;
+}
+#ly-paysuccess .ly-lookorder button {
+  background-color: #ec6a17;
+  color: white;
+  border: none;
+  width: 170px;
+  height: 40px;
+  margin-left: 505px;
+  margin-top: 35px;
+}
+#ly-paysuccess .ly-lookorder button a {
+  color: white;
+  font-size: 14px;
+}
+#ly-paysuccess .ly-bianhao p {
+  color: #adadad;
+  margin-left: 465px;
+  margin-top: 55px;
+}
